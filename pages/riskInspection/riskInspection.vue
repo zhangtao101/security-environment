@@ -32,7 +32,7 @@
 		ref,
 		getCurrentInstance
 	} from 'vue';
-	import { onPullDownRefresh } from '@dcloudio/uni-app';
+	import { onPullDownRefresh, onShow } from '@dcloudio/uni-app';
 	import {
 		request,
 		setToken,
@@ -108,6 +108,10 @@
 	})
 	onPullDownRefresh(() => {
 		queryDate()
+	});
+	
+	onShow(() => {
+		queryDate();
 	});
 </script>
 

@@ -11805,8 +11805,8 @@ if (uni.restoreGlobal) {
               "align-right": "",
               columns: $setup.applyDepartments,
               label: "申请部门",
-              modelValue: $setup.formstate.workshop,
-              "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $setup.formstate.workshop = $event),
+              modelValue: $setup.formstate.department,
+              "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $setup.formstate.department = $event),
               onConfirm: $setup.queryLocations
             }, null, 8, ["columns", "modelValue"]),
             vue.createVNode(_component_wd_input, {
@@ -11821,8 +11821,8 @@ if (uni.restoreGlobal) {
               "align-right": "",
               label: "动火车间",
               type: "text",
-              modelValue: $setup.formstate.department,
-              "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => $setup.formstate.department = $event)
+              modelValue: $setup.formstate.workshop,
+              "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => $setup.formstate.workshop = $event)
             }, null, 8, ["modelValue"]),
             vue.createVNode(_component_wd_picker, {
               "align-right": "",
@@ -11832,7 +11832,7 @@ if (uni.restoreGlobal) {
               modelValue: $setup.formstate.location,
               "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => $setup.formstate.location = $event),
               placeholder: "请选择动火部位",
-              disabled: !$setup.formstate.workshop,
+              disabled: !$setup.formstate.department,
               rules: [{ required: true, message: "请选择动火部位" }]
             }, null, 8, ["columns", "modelValue", "disabled"]),
             vue.createVNode(_component_wd_picker, {
@@ -12481,6 +12481,9 @@ if (uni.restoreGlobal) {
       onPullDownRefresh(() => {
         queryDate();
       });
+      onShow(() => {
+        queryDate();
+      });
       const __returned__ = { inspectionTaskList, queryDate, toDetails, onMounted: vue.onMounted, ref: vue.ref, get request() {
         return request;
       }, get setToken() {
@@ -12489,6 +12492,8 @@ if (uni.restoreGlobal) {
         return setUserInfo;
       }, get onPullDownRefresh() {
         return onPullDownRefresh;
+      }, get onShow() {
+        return onShow;
       }, get config() {
         return config;
       } };
@@ -12634,16 +12639,20 @@ if (uni.restoreGlobal) {
           formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:81", data);
           if (!data)
             data = {};
-          data.result = data.result ? 1 : 0;
-          if (data.photoList && data.photoList.length > 0) {
-            fileList.value = [];
-            data.photoList.forEach((item) => {
-              fileList.value.push({
-                url: item
+          data.result = data.result || data.result === 0 ? data.result : 1;
+          if (!formstate.value) {
+            if (data.photoList && data.photoList.length > 0) {
+              fileList.value = [];
+              data.photoList.forEach((item) => {
+                fileList.value.push({
+                  url: item
+                });
               });
-            });
+            }
+            formstate.value = data;
+          } else {
+            formstate.value.isReport = data.isReport;
           }
-          formstate.value = data;
         });
       }
       function submit() {
@@ -12678,10 +12687,12 @@ if (uni.restoreGlobal) {
             });
           }
         }).catch((error) => {
-          formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:134", error, "error");
+          formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:139", error, "error");
         });
       }
+      const isReported = vue.ref(false);
       function openReported() {
+        isReported.value = true;
         uni.navigateTo({
           url: `/pages/hazardReporting/hazardReporting?testId=${formstate.value.id}`
         });
@@ -12701,8 +12712,8 @@ if (uni.restoreGlobal) {
           return;
         uni.scanCode({
           success: function(res) {
-            formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:168", "条码类型：" + res.scanType);
-            formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:169", "条码内容：" + res.result);
+            formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:175", "条码类型：" + res.scanType);
+            formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:176", "条码内容：" + res.result);
             formstate.value.sign = res.result;
           }
         });
@@ -12710,7 +12721,7 @@ if (uni.restoreGlobal) {
       const fileList = vue.ref([]);
       const action = `${config.baseURL}/${config.mesMain}/accident/register/uploadFile`;
       onLoad((option) => {
-        formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:187", "接收到的testId参数是：", option);
+        formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:194", "接收到的testId参数是：", option);
         editItemId.value = option.testId;
         queryDetails();
       });
@@ -12719,7 +12730,7 @@ if (uni.restoreGlobal) {
           queryDetails();
         }
       });
-      const __returned__ = { editItemId, showSuccess: showSuccess2, formstate, form, queryDetails, submit, openReported, resultList, scan, fileList, action, onMounted: vue.onMounted, getCurrentInstance: vue.getCurrentInstance, ref: vue.ref, get useRoute() {
+      const __returned__ = { editItemId, showSuccess: showSuccess2, formstate, form, queryDetails, submit, isReported, openReported, resultList, scan, fileList, action, onMounted: vue.onMounted, getCurrentInstance: vue.getCurrentInstance, ref: vue.ref, get useRoute() {
         return useRoute;
       }, get onLoad() {
         return onLoad;
@@ -12884,14 +12895,15 @@ if (uni.restoreGlobal) {
                 size: "large",
                 onClick: $setup.submit,
                 block: "",
-                style: { "margin-top": "1rem" }
+                style: { "margin-top": "1rem" },
+                disabled: $setup.formstate.result === 1 && $setup.formstate.isReport !== 1
               }, {
                 default: vue.withCtx(() => [
                   vue.createTextVNode("提交")
                 ]),
                 _: 1
                 /* STABLE */
-              })
+              }, 8, ["disabled"])
             ])) : vue.createCommentVNode("v-if", true)
           ]),
           _: 1
@@ -13120,8 +13132,13 @@ if (uni.restoreGlobal) {
       onPullDownRefresh(() => {
         queryDate();
       });
+      onShow(() => {
+        queryDate();
+      });
       const __returned__ = { inspectionTaskList, queryDate, optionType, toDetails, onMounted: vue.onMounted, ref: vue.ref, getCurrentInstance: vue.getCurrentInstance, get onPullDownRefresh() {
         return onPullDownRefresh;
+      }, get onShow() {
+        return onShow;
       }, get request() {
         return request;
       }, get setToken() {
@@ -13303,16 +13320,20 @@ if (uni.restoreGlobal) {
         }).then((data) => {
           if (!data)
             data = {};
-          data.result = data.result ? 1 : 0;
-          fileList.value = [];
-          if (data.photoList && data.photoList.length > 0) {
-            data.photoList.forEach((item) => {
-              fileList.value.push({
-                url: item
+          data.result = data.result || data.result === 0 ? data.result : 1;
+          if (!formstate.value) {
+            fileList.value = [];
+            if (data.photoList && data.photoList.length > 0) {
+              data.photoList.forEach((item) => {
+                fileList.value.push({
+                  url: item
+                });
               });
-            });
+            }
+            formstate.value = data;
+          } else {
+            formstate.value.isReport = data.isReport;
           }
-          formstate.value = data;
         }).finally(() => {
           uni.stopPullDownRefresh();
         });
@@ -13321,7 +13342,7 @@ if (uni.restoreGlobal) {
         const instance = vue.getCurrentInstance().proxy;
         const eventChannel = instance.getOpenerEventChannel();
         eventChannel.on("acceptDataFromOpenerPage", function(data) {
-          formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:177", data, data.id);
+          formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:181", data, data.id);
           taskId.value = data.id;
           queryDetails();
         });
@@ -13492,14 +13513,15 @@ if (uni.restoreGlobal) {
                 size: "large",
                 onClick: $setup.submit,
                 block: "",
-                style: { "margin-top": "1rem" }
+                style: { "margin-top": "1rem" },
+                disabled: $setup.formstate.result === 1 && $setup.formstate.isReport !== 1
               }, {
                 default: vue.withCtx(() => [
                   vue.createTextVNode("提交")
                 ]),
                 _: 1
                 /* STABLE */
-              })
+              }, 8, ["disabled"])
             ])) : vue.createCommentVNode("v-if", true)
           ]),
           _: 1

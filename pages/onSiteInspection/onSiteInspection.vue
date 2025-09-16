@@ -36,7 +36,7 @@
 		setToken,
 		setUserInfo
 	} from '@/utils';
-	import { onPullDownRefresh } from '@dcloudio/uni-app';
+	import { onPullDownRefresh, onShow } from '@dcloudio/uni-app';
 	import config from '@/config'; // 引入配置文件
 
 
@@ -88,6 +88,10 @@
 	})
 	
 	onPullDownRefresh(() => {
+		queryDate();
+	});
+	
+	onShow(() => {
 		queryDate();
 	});
 </script>

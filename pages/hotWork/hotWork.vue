@@ -30,7 +30,7 @@
 					label="动火部位" 
 					v-model="formstate.location"
 					placeholder="请选择动火部位"
-					:disabled="!formstate.workshop"
+					:disabled="!formstate.department"
 					:rules="[{ required: true, message: '请选择动火部位' }]" 
 				/>
 				<wd-picker 

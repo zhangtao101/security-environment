@@ -3,7 +3,7 @@
 		<!-- form表单 -->
 		<view>
 			<wd-form ref="form" :model="formstate" border>
-				<wd-picker align-right prop="discoverer" :columns="columns" label="上报人员" v-model="formstate.discoverer"
+				<wd-picker align-right prop="discoverer" :columns="columns" label="受伤人员" v-model="formstate.discoverer"
 					:column-change="onChangeDistrict" @confirm="test" placeholder="请选择上报人员"
 					:rules="[{ required: true, message: '请选择上报人员' }]" />
 				<wd-datetime-picker label="发生时间" align-right v-model="formstate.time" prop="time"

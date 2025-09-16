@@ -30,7 +30,7 @@
 					<wd-button type="primary" size="large" @click="openReported" block v-if="formstate.result === 1" :disabled="formstate.isReport === 1">
 						隐患上报
 					</wd-button>
-					<wd-button type="primary" size="large" @click="submit" block style="margin-top: 1rem;">提交</wd-button>
+					<wd-button type="primary" size="large" @click="submit" block style="margin-top: 1rem;" :disabled="formstate.result === 1 && formstate.isReport !== 1">提交</wd-button>
 				</view>
 			</wd-form>
 		</view>
@@ -82,15 +82,20 @@
 			
 			if(!data) data = {}
 			data.result = ( data.result || data.result === 0 ) ? data.result : 1;
-			if(data.photoList && data.photoList.length > 0) {
-				fileList.value = [];
-				data.photoList.forEach(item => {
-					fileList.value.push({
-						url: item,
-					});
-				})
+			
+			if (!formstate.value) {
+				if(data.photoList && data.photoList.length > 0) {
+					fileList.value = [];
+					data.photoList.forEach(item => {
+						fileList.value.push({
+							url: item,
+						});
+					})
+				}
+				formstate.value = data;
+			} else {
+				formstate.value.isReport = data.isReport;
 			}
-			formstate.value = data;
 		});
 	}
 	/**
@@ -134,11 +139,13 @@
 				console.log(error, 'error')
 			})
 	}
-
+	
+	const isReported = ref(false);
 	/**
 	 * 打开上报页面
 	 */
 	function openReported() {
+		isReported.value = true;
 		uni.navigateTo({
 			url: `/pages/hazardReporting/hazardReporting?testId=${formstate.value.id}`,
 		});
