@@ -68,6 +68,7 @@
 						v-model:file-list="fileList" 
 						image-mode="aspectFill" 
 						:action="action"
+						multiple
 					></wd-upload>
 				</wd-cell>
 				<view class="footer">
@@ -114,9 +115,9 @@
 					};
 					params.discoverTime = formatDate(params.discoverTime);
 					params.discoverer = params.discoverer[1];
+					params.photoList = [];
 					// 获取文件数据
 					fileList.value.forEach(item => {
-						params.photoList = [];
 						if (item.response) {
 							const urlMessage = JSON.parse(item.response);
 							params.photoList.push(urlMessage.data);

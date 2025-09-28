@@ -12,8 +12,7 @@
 
 				<wd-select-picker align-right label="巡检结果" v-model="formstate.result" :columns="resultList"
 					:show-confirm="false" type="radio" prop="sign" :rules="[{ required: true, message: '请选扫描区域编码' }]"
-					:disabled="formstate.state === 1"
-				></wd-select-picker>
+					:disabled="formstate.state === 1"></wd-select-picker>
 				<wd-cell title="备注" top>
 					<wd-textarea v-model="formstate.remark" :disabled="formstate.state === 1"></wd-textarea>
 				</wd-cell>
@@ -22,14 +21,16 @@
 					prop="sign" :rules="[{ required: true, message: '请选扫描区域编码' }]" />
 
 				<wd-cell title="现场图片上传" top>
-					<wd-upload v-model:file-list="fileList" image-mode="aspectFill" :action="action"
+					<wd-upload v-model:file-list="fileList" multiple :action="action"
 						:disabled="formstate.state === 1"></wd-upload>
 				</wd-cell>
 				<view class="footer" v-if="formstate.state !== 1">
-					<wd-button type="primary" size="large" @click="openReported" block v-if="formstate.result === 1" :disabled="formstate.isReport === 1">
+					<wd-button type="primary" size="large" @click="openReported" block v-if="formstate.result === 1"
+						:disabled="formstate.isReport === 1">
 						隐患上报
 					</wd-button>
-					<wd-button type="primary" size="large" @click="submit" block style="margin-top: 1rem;" :disabled="formstate.result === 1 && formstate.isReport !== 1">提交</wd-button>
+					<wd-button type="primary" size="large" @click="submit" block style="margin-top: 1rem;"
+						:disabled="formstate.result === 1 && formstate.isReport !== 1">提交</wd-button>
 				</view>
 			</wd-form>
 		</view>
@@ -47,7 +48,10 @@
 	import {
 		useToast
 	} from '@/uni_modules/wot-design-uni';
-	import { onPullDownRefresh, onShow } from '@dcloudio/uni-app';
+	import {
+		onPullDownRefresh,
+		onShow
+	} from '@dcloudio/uni-app';
 	import {
 		request,
 		setToken,
@@ -65,9 +69,9 @@
 	// form表单数据
 	const formstate = ref();
 	const form = ref();
-	
+
 	const taskId = ref();
-	
+
 
 	function submit() {
 		form.value
@@ -78,30 +82,51 @@
 			}) => {
 				if (valid) {
 					const url = `/${config.mesMain}/riskcheck/execution/update`
-						
+					// fileList
+					const params = {
+						...formstate.value,
+					};
+					params.photoList = [];
+					// 获取图片数据
+					fileList.value.forEach(item => {
+						if (item.response) {
+							const urlMessage = JSON.parse(item.response);
+							params.photoList.push(urlMessage.data);
+						} else {
+							params.photoList.push(item.url);
+						}
+					});
+					console.log(999);
 					request({
 						url,
-						data: formstate.value,
+						data: params,
 						needAuth: true,
 						method: 'PUT'
 					}).then((data) => {
 						showSuccess({
 							msg: '上报成功!'
 						});
-						queryDetails();
+						setTimeout(() => {
+							uni.navigateBack({
+								delta: 1,
+							});
+						}, 500)
 					});
 				}
 			})
 			.catch((error) => {
+				console.log(999);
 				console.log(error, 'error')
 			})
 	}
-	
+
 	function openReported() {
 		uni.navigateTo({
 			url: `/pages/riskReporting/riskReporting`,
 			success(res) {
-				res.eventChannel.emit('acceptDataFromOpenerPage', { id: formstate.value.id })
+				res.eventChannel.emit('acceptDataFromOpenerPage', {
+					id: formstate.value.id
+				})
 			}
 		});
 	}
@@ -145,7 +170,7 @@
 	const action = `${config.baseURL}/${config.mesMain}/accident/register/uploadFile`
 
 	// endregion
-	
+
 	// 查询详情
 	function queryDetails() {
 		request({
@@ -154,11 +179,11 @@
 			needAuth: true,
 			method: 'GET'
 		}).then((data) => {
-			if(!data) data = {}
-			data.result = ( data.result || data.result === 0 ) ? data.result : 1;
+			if (!data) data = {}
+			data.result = (data.result || data.result === 0) ? data.result : 1;
 			if (!formstate.value) {
 				fileList.value = [];
-				if(data.photoList && data.photoList.length > 0) {
+				if (data.photoList && data.photoList.length > 0) {
 					data.photoList.forEach(item => {
 						fileList.value.push({
 							url: item,
@@ -170,7 +195,7 @@
 				formstate.value.isReport = data.isReport;
 			}
 		}).finally(() => {
-			 uni.stopPullDownRefresh();
+			uni.stopPullDownRefresh();
 		});
 	}
 
@@ -183,13 +208,13 @@
 			queryDetails();
 		})
 	})
-	
+
 	onPullDownRefresh(() => {
 		queryDetails();
 	});
 
 	onShow(() => {
-		if(formstate.value) {
+		if (formstate.value) {
 			queryDetails();
 		}
 	});

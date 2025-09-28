@@ -30,7 +30,7 @@
 				<wd-select-picker align-right :columns="injuryTypes" label="伤害类型" v-model="formstate.injuredTypeList" />
 					
 				<wd-cell title="附件上传" top>
-					<wd-upload v-model:file-list="photoList" image-mode="aspectFill" :action="action"></wd-upload>
+					<wd-upload v-model:file-list="photoList" multiple image-mode="aspectFill" :action="action"></wd-upload>
 				</wd-cell>
 				
 				<wd-picker align-right prop="managerItem" :columns="columns" label="责任部门主管"
@@ -88,9 +88,9 @@
 						...formstate.value,
 					};
 					params.time = formatDate(params.time);
+					params.fileList = [];
 					// 获取图片数据
 					photoList.value.forEach(item => {
-						params.fileList = [];
 						if (item.response) {
 							const urlMessage = JSON.parse(item.response);
 							params.fileList.push(urlMessage.data);
@@ -128,19 +128,19 @@
 	
 	const accidentType = ref([
 		{
-			label: '特别重大事故',
+			label: '特别重大事故(I级)',
 			value: 1,
 		},
 		{
-			label: '重大事故',
+			label: '重大事故(II级)',
 			value: 2,
 		},
 		{
-			label: '较大事故',
+			label: '较大事故(III级)',
 			value: 3,
 		},
 		{
-			label: '一般事故',
+			label: '一般事故(IV级)',
 			value: 4,
 		},
 	]);

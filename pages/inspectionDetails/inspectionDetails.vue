@@ -24,7 +24,7 @@
 					prop="sign" :rules="[{ required: true, message: '请扫描区域编码' }]" :disabled="formstate.state === 1" />
 
 				<wd-cell title="现场图片上传" top>
-					<wd-upload v-model:file-list="fileList" image-mode="aspectFill" :action="action" :disabled="formstate.state === 1" ></wd-upload>
+					<wd-upload v-model:file-list="fileList" multiple image-mode="aspectFill" :action="action" :disabled="formstate.state === 1" ></wd-upload>
 				</wd-cell>
 				<view class="footer" v-if="formstate.state !== 1">
 					<wd-button type="primary" size="large" @click="openReported" block v-if="formstate.result === 1" :disabled="formstate.isReport === 1">
@@ -112,9 +112,9 @@
 					const params = {
 						...formstate.value
 					};
+					params.photoList = [];
 					// 获取文件数据
 					fileList.value.forEach(item => {
-						params.photoList = [];
 						if (item.response) {
 							const urlMessage = JSON.parse(item.response);
 							params.photoList.push(urlMessage.data);
@@ -129,9 +129,11 @@
 						showSuccess({
 							msg: '上报成功!'
 						});
-						uni.navigateBack({
-							delta: 1,
-						});
+						setTimeout(() => {
+							uni.navigateBack({
+								delta: 1,
+							});
+						}, 500)
 					});
 				}
 			})

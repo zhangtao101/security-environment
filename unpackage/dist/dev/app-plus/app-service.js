@@ -9226,8 +9226,8 @@ if (uni.restoreGlobal) {
             };
             params.discoverTime = formatDate(params.discoverTime);
             params.discoverer = params.discoverer[1];
+            params.photoList = [];
             fileList.value.forEach((item) => {
-              params.photoList = [];
               if (item.response) {
                 const urlMessage = JSON.parse(item.response);
                 params.photoList.push(urlMessage.data);
@@ -9251,7 +9251,7 @@ if (uni.restoreGlobal) {
             });
           }
         }).catch((error) => {
-          formatAppLog("log", "at pages/hazardReporting/hazardReporting.vue:145", error, "error");
+          formatAppLog("log", "at pages/hazardReporting/hazardReporting.vue:146", error, "error");
         });
       }
       const columns = vue.ref([
@@ -9332,8 +9332,12 @@ if (uni.restoreGlobal) {
           value: "环境"
         },
         {
-          label: "健康",
-          value: "健康"
+          label: "职业健康",
+          value: "职业健康"
+        },
+        {
+          label: "消防",
+          value: "消防"
         },
         {
           label: "其他",
@@ -9361,8 +9365,8 @@ if (uni.restoreGlobal) {
       function scan() {
         uni.scanCode({
           success: function(res) {
-            formatAppLog("log", "at pages/hazardReporting/hazardReporting.vue:277", "条码类型：" + res.scanType);
-            formatAppLog("log", "at pages/hazardReporting/hazardReporting.vue:278", "条码内容：" + res.result);
+            formatAppLog("log", "at pages/hazardReporting/hazardReporting.vue:282", "条码类型：" + res.scanType);
+            formatAppLog("log", "at pages/hazardReporting/hazardReporting.vue:283", "条码内容：" + res.result);
             formstate.value.location = res.result;
           }
         });
@@ -9374,7 +9378,7 @@ if (uni.restoreGlobal) {
         queryTree();
       });
       onLoad((option) => {
-        formatAppLog("log", "at pages/hazardReporting/hazardReporting.vue:300", "接收到的testId参数是：", option);
+        formatAppLog("log", "at pages/hazardReporting/hazardReporting.vue:305", "接收到的testId参数是：", option);
         editItemId.value = option.testId;
       });
       const __returned__ = { formstate, form, editItemId, submit, columns, onChangeDistrict, displayFormat, queryTree, listSysPerson, hiddenDangerType, hazardLevel, scan, fileList, action, TabBarVue, onMounted: vue.onMounted, ref: vue.ref, get onLoad() {
@@ -9495,7 +9499,8 @@ if (uni.restoreGlobal) {
                   "file-list": $setup.fileList,
                   "onUpdate:fileList": _cache[8] || (_cache[8] = ($event) => $setup.fileList = $event),
                   "image-mode": "aspectFill",
-                  action: $setup.action
+                  action: $setup.action,
+                  multiple: ""
                 }, null, 8, ["file-list"])
               ]),
               _: 1
@@ -11532,7 +11537,7 @@ if (uni.restoreGlobal) {
     setup(__props, { expose: __expose }) {
       __expose();
       const formstate = vue.ref({
-        dateTime: [Date.now(), ""],
+        dateTime: ["", ""],
         hazardsourceIdentificationList: ["其他"],
         hazardIdentificationList: ["其他"],
         type: ""
@@ -11560,15 +11565,15 @@ if (uni.restoreGlobal) {
             params.startTime = formatDate(params.dateTime[0]);
             params.endTime = formatDate(params.dateTime[1]);
           }
+          params.fileList = [];
           fileList.value.forEach((item) => {
-            params.fileList = [];
             if (item.response) {
               const urlMessage = JSON.parse(item.response);
               params.fileList.push(urlMessage.data);
             }
           });
+          params.photoList = [];
           photoList.value.forEach((item) => {
-            params.photoList = [];
             if (item.response) {
               const urlMessage = JSON.parse(item.response);
               params.photoList.push(urlMessage.data);
@@ -11590,11 +11595,17 @@ if (uni.restoreGlobal) {
           });
         });
       }
-      const hotWorkLocations = vue.ref([
-        { label: "请先选择申请部门", value: -1 }
-      ]);
-      function queryLocations({ value, selectedItems: { charge } }) {
-        formatAppLog("log", "at pages/hotWork/hotWork.vue:303", charge, value);
+      const hotWorkLocations = vue.ref([{
+        label: "请先选择申请部门",
+        value: -1
+      }]);
+      function queryLocations({
+        value,
+        selectedItems: {
+          charge
+        }
+      }) {
+        formatAppLog("log", "at pages/hotWork/hotWork.vue:222", charge, value);
         formstate.value.departSupervisor = charge;
         request({
           url: `/${config.mesMain}/basic/area/getByDepart/${value}`,
@@ -11751,6 +11762,13 @@ if (uni.restoreGlobal) {
       const action = `${config.baseURL}/${config.mesMain}/accident/register/uploadFile`;
       vue.onMounted(() => {
         queryApplyDepartment();
+        const today = /* @__PURE__ */ new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setHours(17, 0, 0, 0);
+        formstate.value.dateTime = [
+          today.getTime(),
+          tomorrow.getTime()
+        ];
       });
       const __returned__ = { formstate, form, submitLoading, submit, hotWorkLocations, queryLocations, applyDepartments, queryApplyDepartment, level, hazardSources, warringType, show, securityMeasuresList, securityMeasuresRemark, open, handleClose, confirm, querySecurityMeasures, photoList, fileList, action, get pause() {
         return pause;
@@ -11955,7 +11973,8 @@ if (uni.restoreGlobal) {
                   "file-list": $setup.photoList,
                   "onUpdate:fileList": _cache[16] || (_cache[16] = ($event) => $setup.photoList = $event),
                   "image-mode": "aspectFill",
-                  action: $setup.action
+                  action: $setup.action,
+                  multiple: ""
                 }, null, 8, ["file-list"])
               ]),
               _: 1
@@ -12664,8 +12683,8 @@ if (uni.restoreGlobal) {
             const params = {
               ...formstate.value
             };
+            params.photoList = [];
             fileList.value.forEach((item) => {
-              params.photoList = [];
               if (item.response) {
                 const urlMessage = JSON.parse(item.response);
                 params.photoList.push(urlMessage.data);
@@ -12681,13 +12700,15 @@ if (uni.restoreGlobal) {
               showSuccess2({
                 msg: "上报成功!"
               });
-              uni.navigateBack({
-                delta: 1
-              });
+              setTimeout(() => {
+                uni.navigateBack({
+                  delta: 1
+                });
+              }, 500);
             });
           }
         }).catch((error) => {
-          formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:139", error, "error");
+          formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:141", error, "error");
         });
       }
       const isReported = vue.ref(false);
@@ -12712,8 +12733,8 @@ if (uni.restoreGlobal) {
           return;
         uni.scanCode({
           success: function(res) {
-            formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:175", "条码类型：" + res.scanType);
-            formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:176", "条码内容：" + res.result);
+            formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:177", "条码类型：" + res.scanType);
+            formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:178", "条码内容：" + res.result);
             formstate.value.sign = res.result;
           }
         });
@@ -12721,7 +12742,7 @@ if (uni.restoreGlobal) {
       const fileList = vue.ref([]);
       const action = `${config.baseURL}/${config.mesMain}/accident/register/uploadFile`;
       onLoad((option) => {
-        formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:194", "接收到的testId参数是：", option);
+        formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:196", "接收到的testId参数是：", option);
         editItemId.value = option.testId;
         queryDetails();
       });
@@ -12864,6 +12885,7 @@ if (uni.restoreGlobal) {
                 vue.createVNode(_component_wd_upload, {
                   "file-list": $setup.fileList,
                   "onUpdate:fileList": _cache[11] || (_cache[11] = ($event) => $setup.fileList = $event),
+                  multiple: "",
                   "image-mode": "aspectFill",
                   action: $setup.action,
                   disabled: $setup.formstate.state === 1
@@ -13264,27 +13286,47 @@ if (uni.restoreGlobal) {
         }) => {
           if (valid) {
             const url = `/${config.mesMain}/riskcheck/execution/update`;
+            const params = {
+              ...formstate.value
+            };
+            params.photoList = [];
+            fileList.value.forEach((item) => {
+              if (item.response) {
+                const urlMessage = JSON.parse(item.response);
+                params.photoList.push(urlMessage.data);
+              } else {
+                params.photoList.push(item.url);
+              }
+            });
+            formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:99", 999);
             request({
               url,
-              data: formstate.value,
+              data: params,
               needAuth: true,
               method: "PUT"
             }).then((data) => {
               showSuccess2({
                 msg: "上报成功!"
               });
-              queryDetails();
+              setTimeout(() => {
+                uni.navigateBack({
+                  delta: 1
+                });
+              }, 500);
             });
           }
         }).catch((error) => {
-          formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:96", error, "error");
+          formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:118", 999);
+          formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:119", error, "error");
         });
       }
       function openReported() {
         uni.navigateTo({
           url: `/pages/riskReporting/riskReporting`,
           success(res) {
-            res.eventChannel.emit("acceptDataFromOpenerPage", { id: formstate.value.id });
+            res.eventChannel.emit("acceptDataFromOpenerPage", {
+              id: formstate.value.id
+            });
           }
         });
       }
@@ -13302,8 +13344,8 @@ if (uni.restoreGlobal) {
         if (formstate.value.state !== 1) {
           uni.scanCode({
             success: function(res) {
-              formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:131", "条码类型：" + res.scanType);
-              formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:132", "条码内容：" + res.result);
+              formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:156", "条码类型：" + res.scanType);
+              formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:157", "条码内容：" + res.result);
               formstate.value.sign = res.result;
             }
           });
@@ -13342,7 +13384,7 @@ if (uni.restoreGlobal) {
         const instance = vue.getCurrentInstance().proxy;
         const eventChannel = instance.getOpenerEventChannel();
         eventChannel.on("acceptDataFromOpenerPage", function(data) {
-          formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:181", data, data.id);
+          formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:206", data, data.id);
           taskId.value = data.id;
           queryDetails();
         });
@@ -13482,7 +13524,7 @@ if (uni.restoreGlobal) {
                 vue.createVNode(_component_wd_upload, {
                   "file-list": $setup.fileList,
                   "onUpdate:fileList": _cache[10] || (_cache[10] = ($event) => $setup.fileList = $event),
-                  "image-mode": "aspectFill",
+                  multiple: "",
                   action: $setup.action,
                   disabled: $setup.formstate.state === 1
                 }, null, 8, ["file-list", "disabled"])
@@ -13555,8 +13597,8 @@ if (uni.restoreGlobal) {
             };
             params.discoverTime = formatDate(params.discoverTime);
             params.discoverer = params.discoverer[1];
+            params.photoList = [];
             fileList.value.forEach((item) => {
-              params.photoList = [];
               if (item.response) {
                 const urlMessage = JSON.parse(item.response);
                 params.photoList.push(urlMessage.data);
@@ -13580,7 +13622,7 @@ if (uni.restoreGlobal) {
             });
           }
         }).catch((error) => {
-          formatAppLog("log", "at pages/riskReporting/riskReporting.vue:145", error, "error");
+          formatAppLog("log", "at pages/riskReporting/riskReporting.vue:146", error, "error");
         });
       }
       const columns = vue.ref([
@@ -13690,8 +13732,8 @@ if (uni.restoreGlobal) {
       function scan() {
         uni.scanCode({
           success: function(res) {
-            formatAppLog("log", "at pages/riskReporting/riskReporting.vue:277", "条码类型：" + res.scanType);
-            formatAppLog("log", "at pages/riskReporting/riskReporting.vue:278", "条码内容：" + res.result);
+            formatAppLog("log", "at pages/riskReporting/riskReporting.vue:278", "条码类型：" + res.scanType);
+            formatAppLog("log", "at pages/riskReporting/riskReporting.vue:279", "条码内容：" + res.result);
             formstate.value.location = res.result;
           }
         });
@@ -13822,7 +13864,8 @@ if (uni.restoreGlobal) {
                   "file-list": $setup.fileList,
                   "onUpdate:fileList": _cache[8] || (_cache[8] = ($event) => $setup.fileList = $event),
                   "image-mode": "aspectFill",
-                  action: $setup.action
+                  action: $setup.action,
+                  multiple: ""
                 }, null, 8, ["file-list"])
               ]),
               _: 1
@@ -14082,8 +14125,8 @@ if (uni.restoreGlobal) {
               ...formstate.value
             };
             params.time = formatDate(params.time);
+            params.fileList = [];
             photoList.value.forEach((item) => {
-              params.fileList = [];
               if (item.response) {
                 const urlMessage = JSON.parse(item.response);
                 params.fileList.push(urlMessage.data);
@@ -14114,19 +14157,19 @@ if (uni.restoreGlobal) {
       }
       const accidentType = vue.ref([
         {
-          label: "特别重大事故",
+          label: "特别重大事故(I级)",
           value: 1
         },
         {
-          label: "重大事故",
+          label: "重大事故(II级)",
           value: 2
         },
         {
-          label: "较大事故",
+          label: "较大事故(III级)",
           value: 3
         },
         {
-          label: "一般事故",
+          label: "一般事故(IV级)",
           value: 4
         }
       ]);
@@ -14362,7 +14405,7 @@ if (uni.restoreGlobal) {
               "align-right": "",
               prop: "discoverer",
               columns: $setup.columns,
-              label: "上报人员",
+              label: "受伤人员",
               modelValue: $setup.formstate.discoverer,
               "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $setup.formstate.discoverer = $event),
               "column-change": $setup.onChangeDistrict,
@@ -14431,6 +14474,7 @@ if (uni.restoreGlobal) {
                 vue.createVNode(_component_wd_upload, {
                   "file-list": $setup.photoList,
                   "onUpdate:fileList": _cache[7] || (_cache[7] = ($event) => $setup.photoList = $event),
+                  multiple: "",
                   "image-mode": "aspectFill",
                   action: $setup.action
                 }, null, 8, ["file-list"])
