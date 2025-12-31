@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="uni-app--wrapper">
 		<!-- form表单 -->
 		<view>
 			<wd-form ref="form" :model="formstate" border>
@@ -53,7 +53,7 @@
 				  v-model="formstate.hazardSource"
 				  label="隐患来源"
 				  prop="hazardSource"
-				  :rules="[{ required: true, message: '请输入隐患来源' }]"
+				  :rules="[{ required: false, message: '请输入隐患来源' }]"
 				/>
 				<wd-picker 
 					align-right 
@@ -61,7 +61,7 @@
 					label="隐患等级" 
 					v-model="formstate.level" 
 					prop="level"
-					:rules="[{ required: true, message: '请选择隐患等级' }]"
+					:rules="[{ required: false, message: '请选择隐患等级' }]"
 				/>
 				<wd-cell title="现场图片上传" top>
 					<wd-upload

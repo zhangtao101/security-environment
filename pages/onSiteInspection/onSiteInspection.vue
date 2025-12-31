@@ -1,5 +1,7 @@
 <template>
-	<view style="margin-top: 1em;">
+	<view>
+		<wd-input align-right v-model="code" label="区域编码" suffix-icon="scan" readonly @click="scan()" style="margin: 1em 0;" />
+
 		<wd-cell-group>
 			<wd-cell v-for="(item, index) of inspectionTaskList" :key="index">
 				<template #title>
@@ -36,7 +38,10 @@
 		setToken,
 		setUserInfo
 	} from '@/utils';
-	import { onPullDownRefresh, onShow } from '@dcloudio/uni-app';
+	import {
+		onPullDownRefresh,
+		onShow
+	} from '@dcloudio/uni-app';
 	import config from '@/config'; // 引入配置文件
 
 
@@ -49,7 +54,7 @@
 			request({
 				url: `/${config.mesMain}/hazardcheck/execution/taskList`,
 				data: {
-					area: '',
+					areaCode: code.value,
 				},
 				needAuth: true,
 				method: 'GET'
@@ -57,7 +62,7 @@
 			request({
 				url: `/${config.mesMain}/hazardcheck/execution/taskListEd`,
 				data: {
-					area: '',
+					areaCode: code.value,
 				},
 				needAuth: true,
 				method: 'GET'
@@ -69,9 +74,9 @@
 			]
 			console.log(inspectionTaskList.value)
 		}).finally(() => {
-			 uni.stopPullDownRefresh();
+			uni.stopPullDownRefresh();
 		});
-		
+
 	}
 
 	/**
@@ -83,14 +88,32 @@
 		});
 	}
 
+
+	// region 扫码
+	const code = ref('');
+
+	function scan() {
+		// 允许从相机和相册扫码
+		uni.scanCode({
+			success: function(res) {
+				console.log('条码类型：' + res.scanType);
+				console.log('条码内容：' + res.result);
+				code.value = res.result;
+				queryDate();
+			}
+		});
+	}
+
+	// endregion
+
 	onMounted(() => {
 		queryDate()
 	})
-	
+
 	onPullDownRefresh(() => {
 		queryDate();
 	});
-	
+
 	onShow(() => {
 		queryDate();
 	});

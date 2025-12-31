@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="uni-app--wrapper">
 		<view>
 			<view style="display: flex;align-items: center;flex-direction: column;">
 				<wd-img :width="100" :height="100" round

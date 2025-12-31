@@ -10,7 +10,7 @@
 				<wd-picker align-right prop="location" :columns="hotWorkLocations" label="动火部位"
 					v-model="formstate.location" placeholder="请选择动火部位" :disabled="!formstate.department"
 					:rules="[{ required: true, message: '请选择动火部位' }]" />
-				<wd-picker align-right :columns="level" label="动火级别" v-model="formstate.level" />
+				<wd-picker align-right prop="level" :columns="level" label="动火级别" v-model="formstate.level" :rules="[{ required: true, message: '请选择动火级别' }]"/>
 				<wd-datetime-picker label="动火时间" align-right v-model="formstate.dateTime"
 					:rules="[{ required: true, message: '请填写动火时间' }]" />
 				<wd-textarea align-right label="动火内容" v-model="formstate.content" placeholder="请填写详细的动火内容"

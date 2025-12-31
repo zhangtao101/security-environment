@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="uni-app--wrapper">
 		<!-- form表单 -->
 		<view>
 			<wd-form ref="form" :model="formstate" border>

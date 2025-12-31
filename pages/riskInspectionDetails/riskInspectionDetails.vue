@@ -8,7 +8,6 @@
 				<wd-input align-right v-model="formstate.checkCriteria" label="检查标准" readonly />
 				<wd-input align-right v-model="formstate.checkUser" label="检查人" readonly />
 				<wd-input align-right v-model="formstate.area" label="区域" readonly />
-				<wd-input align-right v-model="formstate.content" label="内容" readonly />
 
 				<wd-select-picker align-right label="巡检结果" v-model="formstate.result" :columns="resultList"
 					:show-confirm="false" type="radio" prop="sign" :rules="[{ required: true, message: '请选扫描区域编码' }]"

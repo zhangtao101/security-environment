@@ -10,13 +10,10 @@
 				<wd-input align-right v-model="formstate.checkCriteria" label="检查标准" placeholder="" readonly />
 				<wd-input align-right v-model="formstate.checkUser" label="检查人" placeholder="" readonly />
 				<wd-input align-right v-model="formstate.area" label="区域" placeholder="" readonly />
-				<wd-input align-right v-model="formstate.content" label="内容" placeholder="" readonly />
 
 				<wd-select-picker align-right label="巡检结果" v-model="formstate.result" :columns="resultList"
-					:show-confirm="false" type="radio" prop="result"
-					:rules="[{ required: true, message: '请选择巡检结果' }]"
-					:disabled="formstate.state === 1" 
-				></wd-select-picker>
+					:show-confirm="false" type="radio" prop="result" :rules="[{ required: true, message: '请选择巡检结果' }]"
+					:disabled="formstate.state === 1"></wd-select-picker>
 
 				<wd-input align-right v-model="formstate.remark" label="备注" :disabled="formstate.state === 1" />
 
@@ -24,13 +21,16 @@
 					prop="sign" :rules="[{ required: true, message: '请扫描区域编码' }]" :disabled="formstate.state === 1" />
 
 				<wd-cell title="现场图片上传" top>
-					<wd-upload v-model:file-list="fileList" multiple image-mode="aspectFill" :action="action" :disabled="formstate.state === 1" ></wd-upload>
+					<wd-upload v-model:file-list="fileList" multiple image-mode="aspectFill" :action="action"
+						:disabled="formstate.state === 1"></wd-upload>
 				</wd-cell>
 				<view class="footer" v-if="formstate.state !== 1">
-					<wd-button type="primary" size="large" @click="openReported" block v-if="formstate.result === 1" :disabled="formstate.isReport === 1">
+					<wd-button type="primary" size="large" @click="openReported" block v-if="formstate.result === 1"
+						:disabled="formstate.isReport === 1">
 						隐患上报
 					</wd-button>
-					<wd-button type="primary" size="large" @click="submit" block style="margin-top: 1rem;" :disabled="formstate.result === 1 && formstate.isReport !== 1">提交</wd-button>
+					<wd-button type="primary" size="large" @click="submit" block style="margin-top: 1rem;"
+						:disabled="formstate.result === 1 && formstate.isReport !== 1">提交</wd-button>
 				</view>
 			</wd-form>
 		</view>
@@ -45,11 +45,18 @@
 		getCurrentInstance,
 		ref
 	} from 'vue';
-	import { useRoute } from 'vue-router';
-	import { onLoad, onShow } from '@dcloudio/uni-app';
+	import {
+		useRoute
+	} from 'vue-router';
+	import {
+		onLoad,
+		onShow
+	} from '@dcloudio/uni-app';
 
-	import { useToast } from '@/uni_modules/wot-design-uni';
-	
+	import {
+		useToast
+	} from '@/uni_modules/wot-design-uni';
+
 	import {
 		request,
 		setToken,
@@ -58,8 +65,10 @@
 	import config from '@/config'; // 引入配置文件
 
 	const editItemId = ref(-1);
-	const { success: showSuccess } = useToast()
-	
+	const {
+		success: showSuccess
+	} = useToast()
+
 
 	// region form表单
 	// form表单数据
@@ -79,12 +88,12 @@
 			method: 'GET'
 		}).then((data) => {
 			console.log(data);
-			
-			if(!data) data = {}
-			data.result = ( data.result || data.result === 0 ) ? data.result : 1;
-			
+
+			if (!data) data = {}
+			data.result = (data.result || data.result === 0) ? data.result : 1;
+
 			if (!formstate.value) {
-				if(data.photoList && data.photoList.length > 0) {
+				if (data.photoList && data.photoList.length > 0) {
 					fileList.value = [];
 					data.photoList.forEach(item => {
 						fileList.value.push({
@@ -141,7 +150,7 @@
 				console.log(error, 'error')
 			})
 	}
-	
+
 	const isReported = ref(false);
 	/**
 	 * 打开上报页面
@@ -170,7 +179,7 @@
 	// region 扫码
 
 	function scan() {
-		if(formstate.value.state === 1) return;
+		if (formstate.value.state === 1) return;
 		// 允许从相机和相册扫码
 		uni.scanCode({
 			success: function(res) {
@@ -199,7 +208,7 @@
 	});
 
 	onShow(() => {
-		if(formstate.value) {
+		if (formstate.value) {
 			queryDetails();
 		}
 	});

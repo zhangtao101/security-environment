@@ -1,0 +1,19 @@
+{
+    "id": "lzc-picker",
+    "name": "搜索框选择器，picker选择框带有搜索功能，下拉选择，精准搜索，模糊搜索",
+    "displayName": "搜索框选择器，picker选择框带有搜索功能，下拉选择，精准搜索，模糊搜索",
+    "version": "1.0.3",
+    "description": "一个支持搜索功能的picker选择框，解决数据过多时需要滑动很长时间的问题",
+    "keywords": [
+        "picker",
+        "select",
+        "搜索",
+        "选择"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}

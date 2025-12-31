@@ -34,10 +34,10 @@ export function navigateToLogin() {
 export function request(options) {
   return new Promise((resolve, reject) => {
     // 检查登录状态
-    if (options.needAuth && !isLoggedIn()) {
-      navigateToLogin();
-      return reject(new Error('未登录'));
-    }
+    // if (options.needAuth && !isLoggedIn()) {
+    //   navigateToLogin();
+    //   return reject(new Error('未登录'));
+    // }
     
     // 显示加载状态
     if (options.loading) {

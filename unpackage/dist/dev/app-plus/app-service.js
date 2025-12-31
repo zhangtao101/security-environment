@@ -392,7 +392,7 @@ if (uni.restoreGlobal) {
      */
     classPrefix: makeStringProp("wd-icon")
   };
-  const __default__$x = {
+  const __default__$y = {
     name: "wd-icon",
     options: {
       virtualHost: true,
@@ -400,8 +400,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$M = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$x,
+  const _sfc_main$N = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$y,
     props: iconProps,
     emits: ["click", "touch"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -440,7 +440,7 @@ if (uni.restoreGlobal) {
     }
     return target;
   };
-  function _sfc_render$L(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$M(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -459,7 +459,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_1$3 = /* @__PURE__ */ _export_sfc(_sfc_main$M, [["render", _sfc_render$L], ["__scopeId", "data-v-24906af6"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-icon/wd-icon.vue"]]);
+  const __easycom_1$4 = /* @__PURE__ */ _export_sfc(_sfc_main$N, [["render", _sfc_render$M], ["__scopeId", "data-v-24906af6"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-icon/wd-icon.vue"]]);
   function useParent(key) {
     const parent = vue.inject(key, null);
     if (parent) {
@@ -862,7 +862,7 @@ if (uni.restoreGlobal) {
      */
     markerSide: makeStringProp("before")
   };
-  const __default__$w = {
+  const __default__$x = {
     name: "wd-input",
     options: {
       virtualHost: true,
@@ -870,8 +870,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$L = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$w,
+  const _sfc_main$M = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$x,
     props: inputProps,
     emits: [
       "update:modelValue",
@@ -1029,12 +1029,12 @@ if (uni.restoreGlobal) {
       function isValueEqual(value1, value2) {
         return isEqual(String(value1), String(value2));
       }
-      const __returned__ = { props, emit, slots, translate, isPwdVisible, clearing, focused, focusing, inputValue, cell, form, placeholderValue, showClear, showWordCount, errorMessage, isRequired, rootClass, labelClass, inputPlaceholderClass, labelStyle, getInitValue, formatValue, togglePwdVisible, handleClear, handleBlur, handleFocus, handleInput, handleKeyboardheightchange, handleConfirm, onClickSuffixIcon, onClickPrefixIcon, handleClick, isValueEqual, wdIcon: __easycom_1$3 };
+      const __returned__ = { props, emit, slots, translate, isPwdVisible, clearing, focused, focusing, inputValue, cell, form, placeholderValue, showClear, showWordCount, errorMessage, isRequired, rootClass, labelClass, inputPlaceholderClass, labelStyle, getInitValue, formatValue, togglePwdVisible, handleClear, handleBlur, handleFocus, handleInput, handleKeyboardheightchange, handleConfirm, onClickSuffixIcon, onClickPrefixIcon, handleClick, isValueEqual, wdIcon: __easycom_1$4 };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$K(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$L(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -1198,7 +1198,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_2$1 = /* @__PURE__ */ _export_sfc(_sfc_main$L, [["render", _sfc_render$K], ["__scopeId", "data-v-4e0c9774"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-input/wd-input.vue"]]);
+  const __easycom_2$1 = /* @__PURE__ */ _export_sfc(_sfc_main$M, [["render", _sfc_render$L], ["__scopeId", "data-v-4e0c9774"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-input/wd-input.vue"]]);
   const ON_SHOW = "onShow";
   const ON_LOAD = "onLoad";
   const ON_PULL_DOWN_REFRESH = "onPullDownRefresh";
@@ -1307,7 +1307,7 @@ if (uni.restoreGlobal) {
       linkChildren
     };
   }
-  const __default__$v = {
+  const __default__$w = {
     name: "wd-cell-group",
     options: {
       addGlobalClass: true,
@@ -1315,8 +1315,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$K = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$v,
+  const _sfc_main$L = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$w,
     props: cellGroupProps,
     setup(__props, { expose: __expose }) {
       __expose();
@@ -1328,7 +1328,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$J(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$K(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -1369,7 +1369,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_3$1 = /* @__PURE__ */ _export_sfc(_sfc_main$K, [["render", _sfc_render$J], ["__scopeId", "data-v-55e5786b"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-cell-group/wd-cell-group.vue"]]);
+  const __easycom_3$1 = /* @__PURE__ */ _export_sfc(_sfc_main$L, [["render", _sfc_render$K], ["__scopeId", "data-v-55e5786b"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-cell-group/wd-cell-group.vue"]]);
   const _b64chars = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"];
   const _mkUriSafe = (src) => src.replace(/[+/]/g, (m0) => m0 === "+" ? "-" : "_").replace(/=+\$/m, "");
   const fromUint8Array = (src, rfc4648 = false) => {
@@ -1487,7 +1487,7 @@ if (uni.restoreGlobal) {
      */
     scope: String
   };
-  const __default__$u = {
+  const __default__$v = {
     name: "wd-button",
     options: {
       addGlobalClass: true,
@@ -1495,8 +1495,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$J = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$u,
+  const _sfc_main$K = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$v,
     props: buttonProps,
     emits: [
       "click",
@@ -1593,12 +1593,12 @@ if (uni.restoreGlobal) {
         const svg = loadingIcon(color, !plain);
         loadingIconSvg.value = `"data:image/svg+xml;base64,${encode(svg)}"`;
       }
-      const __returned__ = { loadingIcon, props, emit, hoverStartTime, hoverStayTime, loadingIconSvg, loadingStyle, handleClick, handleGetAuthorize, handleGetuserinfo, handleConcat, handleGetphonenumber, handleError, handleLaunchapp, handleOpensetting, handleChooseavatar, handleAgreePrivacyAuthorization, buildLoadingSvg, wdIcon: __easycom_1$3 };
+      const __returned__ = { loadingIcon, props, emit, hoverStartTime, hoverStayTime, loadingIconSvg, loadingStyle, handleClick, handleGetAuthorize, handleGetuserinfo, handleConcat, handleGetphonenumber, handleError, handleLaunchapp, handleOpensetting, handleChooseavatar, handleAgreePrivacyAuthorization, buildLoadingSvg, wdIcon: __easycom_1$4 };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$I(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$J(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("button", {
       id: _ctx.buttonId,
       "hover-class": `${_ctx.disabled || _ctx.loading ? "" : "wd-button--active"}`,
@@ -1665,7 +1665,7 @@ if (uni.restoreGlobal) {
       ])
     ], 46, ["id", "hover-class", "hover-start-time", "hover-stay-time", "open-type", "send-message-title", "send-message-path", "send-message-img", "app-parameter", "show-message-card", "session-from", "lang", "hover-stop-propagation", "scope"]);
   }
-  const __easycom_6 = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["render", _sfc_render$I], ["__scopeId", "data-v-d858c170"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-button/wd-button.vue"]]);
+  const __easycom_6 = /* @__PURE__ */ _export_sfc(_sfc_main$K, [["render", _sfc_render$J], ["__scopeId", "data-v-d858c170"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-button/wd-button.vue"]]);
   const loadingProps = {
     ...baseProps,
     /**
@@ -1681,7 +1681,7 @@ if (uni.restoreGlobal) {
      */
     size: makeNumericProp("")
   };
-  const __default__$t = {
+  const __default__$u = {
     name: "wd-loading",
     options: {
       virtualHost: true,
@@ -1689,8 +1689,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$I = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$t,
+  const _sfc_main$J = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$u,
     props: loadingProps,
     setup(__props, { expose: __expose }) {
       __expose();
@@ -1752,7 +1752,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$H(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$I(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -1777,7 +1777,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const wdLoading = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["render", _sfc_render$H], ["__scopeId", "data-v-f2b508ee"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-loading/wd-loading.vue"]]);
+  const wdLoading = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["render", _sfc_render$I], ["__scopeId", "data-v-f2b508ee"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-loading/wd-loading.vue"]]);
   const transitionProps = {
     ...baseProps,
     /**
@@ -1851,7 +1851,7 @@ if (uni.restoreGlobal) {
      */
     disableTouchMove: makeBooleanProp(false)
   };
-  const __default__$s = {
+  const __default__$t = {
     name: "wd-transition",
     options: {
       addGlobalClass: true,
@@ -1859,8 +1859,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$H = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$s,
+  const _sfc_main$I = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$t,
     props: transitionProps,
     emits: ["click", "before-enter", "enter", "before-leave", "leave", "after-leave", "after-enter"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -2025,7 +2025,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$G(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$H(_ctx, _cache, $props, $setup, $data, $options) {
     return $setup.isShow && _ctx.disableTouchMove ? (vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -2057,7 +2057,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE, NEED_HYDRATION */
     )) : vue.createCommentVNode("v-if", true);
   }
-  const wdTransition = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["render", _sfc_render$G], ["__scopeId", "data-v-af59a128"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-transition/wd-transition.vue"]]);
+  const wdTransition = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["render", _sfc_render$H], ["__scopeId", "data-v-af59a128"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-transition/wd-transition.vue"]]);
   const overlayProps = {
     ...baseProps,
     /**
@@ -2080,7 +2080,7 @@ if (uni.restoreGlobal) {
      */
     zIndex: makeNumberProp(10)
   };
-  const __default__$r = {
+  const __default__$s = {
     name: "wd-overlay",
     options: {
       virtualHost: true,
@@ -2088,8 +2088,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$G = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$r,
+  const _sfc_main$H = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$s,
     props: overlayProps,
     emits: ["click"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -2104,7 +2104,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$F(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$G(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createBlock($setup["wdTransition"], {
       show: _ctx.show,
       name: "fade",
@@ -2121,7 +2121,7 @@ if (uni.restoreGlobal) {
       /* FORWARDED */
     }, 8, ["show", "duration", "custom-style", "disable-touch-move"]);
   }
-  const wdOverlay = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["render", _sfc_render$F], ["__scopeId", "data-v-6e0d1141"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-overlay/wd-overlay.vue"]]);
+  const wdOverlay = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["render", _sfc_render$G], ["__scopeId", "data-v-6e0d1141"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-overlay/wd-overlay.vue"]]);
   const toastDefaultOptionKey = "__TOAST_OPTION__";
   const defaultOptions$1 = {
     duration: 2e3,
@@ -2311,7 +2311,7 @@ if (uni.restoreGlobal) {
      */
     closed: Function
   };
-  const __default__$q = {
+  const __default__$r = {
     name: "wd-toast",
     options: {
       addGlobalClass: true,
@@ -2319,8 +2319,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$F = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$q,
+  const _sfc_main$G = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$r,
     props: toastProps,
     setup(__props, { expose: __expose }) {
       __expose();
@@ -2439,12 +2439,12 @@ if (uni.restoreGlobal) {
         return closed;
       }, set closed(v) {
         closed = v;
-      }, toastOptionKey, toastOption, transitionStyle, rootClass, svgStyle, handleAfterEnter, handleAfterLeave, buildSvg, reset, mergeOptionsWithProps, wdIcon: __easycom_1$3, wdLoading, wdOverlay, wdTransition };
+      }, toastOptionKey, toastOption, transitionStyle, rootClass, svgStyle, handleAfterEnter, handleAfterLeave, buildSvg, reset, mergeOptionsWithProps, wdIcon: __easycom_1$4, wdLoading, wdOverlay, wdTransition };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$E(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$F(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       vue.Fragment,
       null,
@@ -2530,8 +2530,8 @@ if (uni.restoreGlobal) {
       /* STABLE_FRAGMENT */
     );
   }
-  const __easycom_9$1 = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["render", _sfc_render$E], ["__scopeId", "data-v-fce8c80a"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-toast/wd-toast.vue"]]);
-  const __default__$p = {
+  const __easycom_9$1 = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["render", _sfc_render$F], ["__scopeId", "data-v-fce8c80a"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-toast/wd-toast.vue"]]);
+  const __default__$q = {
     name: "wd-form",
     options: {
       addGlobalClass: true,
@@ -2539,8 +2539,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$E = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$p,
+  const _sfc_main$F = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$q,
     props: formProps,
     setup(__props, { expose: __expose }) {
       const { show: showToast2 } = useToast("wd-form-toast");
@@ -2699,7 +2699,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$D(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$E(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -2717,12 +2717,12 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_7 = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["render", _sfc_render$D], ["__scopeId", "data-v-6504e7d0"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-form/wd-form.vue"]]);
+  const __easycom_7 = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["render", _sfc_render$E], ["__scopeId", "data-v-6504e7d0"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-form/wd-form.vue"]]);
   const block0 = (Comp) => {
     (Comp.$renderjs || (Comp.$renderjs = [])).push("render");
     (Comp.$renderjsModules || (Comp.$renderjsModules = {}))["render"] = "78afd58a";
   };
-  const _sfc_main$D = {
+  const _sfc_main$E = {
     name: "wd-root-portal",
     options: {
       virtualHost: true,
@@ -2730,12 +2730,12 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  function _sfc_render$C(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$D(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.renderSlot(_ctx.$slots, "default");
   }
   if (typeof block0 === "function")
-    block0(_sfc_main$D);
-  const wdRootPortal = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["render", _sfc_render$C], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-root-portal/wd-root-portal.vue"]]);
+    block0(_sfc_main$E);
+  const wdRootPortal = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["render", _sfc_render$D], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-root-portal/wd-root-portal.vue"]]);
   const popupProps = {
     ...baseProps,
     /**
@@ -2825,7 +2825,7 @@ if (uni.restoreGlobal) {
      */
     rootPortal: makeBooleanProp(false)
   };
-  const __default__$o = {
+  const __default__$p = {
     name: "wd-popup",
     options: {
       virtualHost: true,
@@ -2833,8 +2833,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$C = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$o,
+  const _sfc_main$D = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$p,
     props: popupProps,
     emits: [
       "update:modelValue",
@@ -2901,12 +2901,12 @@ if (uni.restoreGlobal) {
       }
       function noop() {
       }
-      const __returned__ = { props, emit, transitionName, safeBottom, style, rootClass, handleClickModal, close, noop, wdIcon: __easycom_1$3, wdOverlay, wdTransition, wdRootPortal };
+      const __returned__ = { props, emit, transitionName, safeBottom, style, rootClass, handleClickModal, close, noop, wdIcon: __easycom_1$4, wdOverlay, wdTransition, wdRootPortal };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$B(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$C(_ctx, _cache, $props, $setup, $data, $options) {
     return _ctx.rootPortal ? (vue.openBlock(), vue.createBlock($setup["wdRootPortal"], { key: 0 }, {
       default: vue.withCtx(() => [
         vue.createElementVNode("view", { class: "wd-popup-wrapper" }, [
@@ -3000,7 +3000,7 @@ if (uni.restoreGlobal) {
       /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
     ));
   }
-  const __easycom_13 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["render", _sfc_render$B], ["__scopeId", "data-v-25a8a9f7"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-popup/wd-popup.vue"]]);
+  const __easycom_13 = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["render", _sfc_render$C], ["__scopeId", "data-v-25a8a9f7"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-popup/wd-popup.vue"]]);
   const notifyProps = {
     /**
      * 类型，可选值为 primary success danger warning
@@ -3095,7 +3095,7 @@ if (uni.restoreGlobal) {
       onOpened: void 0
     };
   }
-  const __default__$n = {
+  const __default__$o = {
     name: "wd-notify",
     options: {
       virtualHost: true,
@@ -3103,8 +3103,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$B = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$n,
+  const _sfc_main$C = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$o,
     props: notifyProps,
     emits: ["update:visible", "click", "closed", "opened"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -3152,7 +3152,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$A(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$B(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createBlock($setup["wdPopup"], {
       modelValue: $setup.state.visible,
       "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $setup.state.visible = $event),
@@ -3190,7 +3190,7 @@ if (uni.restoreGlobal) {
       /* FORWARDED */
     }, 8, ["modelValue", "custom-style", "position", "z-index", "root-portal"]);
   }
-  const __easycom_4$1 = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["render", _sfc_render$A], ["__scopeId", "data-v-a92d61e2"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-notify/wd-notify.vue"]]);
+  const __easycom_4$1 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["render", _sfc_render$B], ["__scopeId", "data-v-a92d61e2"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-notify/wd-notify.vue"]]);
   const messageDefaultOptionKey = "__MESSAGE_OPTION__";
   const None = Symbol("None");
   const defaultOptions = {
@@ -4109,7 +4109,7 @@ if (uni.restoreGlobal) {
     const file = new File([blob], filename, { type: mimeString });
     return file;
   }
-  const _sfc_main$A = /* @__PURE__ */ vue.defineComponent({
+  const _sfc_main$B = /* @__PURE__ */ vue.defineComponent({
     __name: "login",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -4150,7 +4150,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$z(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$A(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_wd_input = resolveEasycom(vue.resolveDynamicComponent("wd-input"), __easycom_2$1);
     const _component_wd_cell_group = resolveEasycom(vue.resolveDynamicComponent("wd-cell-group"), __easycom_3$1);
     const _component_wd_button = resolveEasycom(vue.resolveDynamicComponent("wd-button"), __easycom_6);
@@ -4211,7 +4211,7 @@ if (uni.restoreGlobal) {
       vue.createVNode(_component_wd_notify)
     ]);
   }
-  const PagesLoginLogin = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["render", _sfc_render$z], ["__file", "E:/开发/app/security-environment/pages/login/login.vue"]]);
+  const PagesLoginLogin = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["render", _sfc_render$A], ["__file", "E:/开发/app/security-environment/pages/login/login.vue"]]);
   const pickerViewProps = {
     ...baseProps,
     /**
@@ -4286,7 +4286,7 @@ if (uni.restoreGlobal) {
     });
     return result;
   }
-  const __default__$m = {
+  const __default__$n = {
     name: "wd-picker-view",
     options: {
       virtualHost: true,
@@ -4294,8 +4294,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$z = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$m,
+  const _sfc_main$A = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$n,
     props: pickerViewProps,
     emits: ["change", "pickstart", "pickend", "update:modelValue"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -4501,7 +4501,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$y(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$z(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -4574,7 +4574,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const wdPickerView = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["render", _sfc_render$y], ["__scopeId", "data-v-c3bc94ff"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-picker-view/wd-picker-view.vue"]]);
+  const wdPickerView = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["render", _sfc_render$z], ["__scopeId", "data-v-c3bc94ff"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-picker-view/wd-picker-view.vue"]]);
   const cellProps = {
     ...baseProps,
     /**
@@ -4675,7 +4675,7 @@ if (uni.restoreGlobal) {
      */
     markerSide: makeStringProp("before")
   };
-  const __default__$l = {
+  const __default__$m = {
     name: "wd-cell",
     options: {
       addGlobalClass: true,
@@ -4683,8 +4683,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$y = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$l,
+  const _sfc_main$z = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$m,
     props: cellProps,
     emits: ["click"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -4735,12 +4735,12 @@ if (uni.restoreGlobal) {
           }
         }
       }
-      const __returned__ = { props, emit, slots, cell, isBorder, form, errorMessage, isRequired, showLeft, onClick, wdIcon: __easycom_1$3 };
+      const __returned__ = { props, emit, slots, cell, isBorder, form, errorMessage, isRequired, showLeft, onClick, wdIcon: __easycom_1$4 };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$x(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$y(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", {
       class: vue.normalizeClass(["wd-cell", $setup.isBorder ? "is-border" : "", _ctx.size ? "is-" + _ctx.size : "", _ctx.center ? "is-center" : "", _ctx.customClass]),
       style: vue.normalizeStyle(_ctx.customStyle),
@@ -4856,7 +4856,7 @@ if (uni.restoreGlobal) {
       )
     ], 14, ["hover-class"]);
   }
-  const __easycom_5 = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["render", _sfc_render$x], ["__scopeId", "data-v-f1c5bbe2"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-cell/wd-cell.vue"]]);
+  const __easycom_5 = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["render", _sfc_render$y], ["__scopeId", "data-v-f1c5bbe2"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-cell/wd-cell.vue"]]);
   const pickerProps = {
     ...baseProps,
     /**
@@ -5017,7 +5017,7 @@ if (uni.restoreGlobal) {
      */
     markerSide: makeStringProp("before")
   };
-  const __default__$k = {
+  const __default__$l = {
     name: "wd-picker",
     options: {
       virtualHost: true,
@@ -5025,8 +5025,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$x = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$k,
+  const _sfc_main$y = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$l,
     props: pickerProps,
     emits: ["confirm", "open", "cancel", "clear", "update:modelValue"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -5262,12 +5262,12 @@ if (uni.restoreGlobal) {
         open,
         setLoading
       });
-      const __returned__ = { translate, props, emit, pickerViewWd, innerLoading, popupShow, showValue, pickerValue, displayColumns, resetColumns, isPicking, hasConfirmed, isLoading, showClear, showArrow, cellClass, proxy, handleShowValueUpdate, getSelects, open, close, showPopup, onCancel, onConfirm, handleConfirm, pickerViewChange, setShowValue, noop, onPickStart, onPickEnd, setLoading, handleClear, wdIcon: __easycom_1$3, wdPopup: __easycom_13, wdPickerView, wdCell: __easycom_5 };
+      const __returned__ = { translate, props, emit, pickerViewWd, innerLoading, popupShow, showValue, pickerValue, displayColumns, resetColumns, isPicking, hasConfirmed, isLoading, showClear, showArrow, cellClass, proxy, handleShowValueUpdate, getSelects, open, close, showPopup, onCancel, onConfirm, handleConfirm, pickerViewChange, setShowValue, noop, onPickStart, onPickEnd, setLoading, handleClear, wdIcon: __easycom_1$4, wdPopup: __easycom_13, wdPickerView, wdCell: __easycom_5 };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$w(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$x(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -5408,7 +5408,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["render", _sfc_render$w], ["__scopeId", "data-v-e228acd5"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-picker/wd-picker.vue"]]);
+  const __easycom_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["render", _sfc_render$x], ["__scopeId", "data-v-e228acd5"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-picker/wd-picker.vue"]]);
   const datetimePickerViewProps = {
     ...baseProps,
     /**
@@ -5514,14 +5514,14 @@ if (uni.restoreGlobal) {
     }
     return values;
   }
-  const __default__$j = {
+  const __default__$k = {
     name: "wd-datetime-picker-view",
     virtualHost: true,
     addGlobalClass: true,
     styleIsolation: "shared"
   };
-  const _sfc_main$w = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$j,
+  const _sfc_main$x = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$k,
     props: datetimePickerViewProps,
     emits: ["change", "pickstart", "pickend", "update:modelValue"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -5877,7 +5877,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$v(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$w(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createBlock($setup["wdPickerView"], {
       ref: "datePickerview",
       "custom-class": _ctx.customClass,
@@ -5895,7 +5895,7 @@ if (uni.restoreGlobal) {
       onPickend: $setup.onPickEnd
     }, null, 8, ["custom-class", "custom-style", "immediate-change", "modelValue", "columns", "columns-height", "loading", "loading-color"]);
   }
-  const wdDatetimePickerView = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["render", _sfc_render$v], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-datetime-picker-view/wd-datetime-picker-view.vue"]]);
+  const wdDatetimePickerView = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["render", _sfc_render$w], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-datetime-picker-view/wd-datetime-picker-view.vue"]]);
   const datetimePickerProps = {
     ...baseProps,
     /**
@@ -6091,7 +6091,7 @@ if (uni.restoreGlobal) {
      */
     markerSide: makeStringProp("before")
   };
-  const __default__$i = {
+  const __default__$j = {
     name: "wd-datetime-picker",
     options: {
       virtualHost: true,
@@ -6099,8 +6099,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$v = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$i,
+  const _sfc_main$w = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$j,
     props: datetimePickerProps,
     emits: ["change", "open", "toggle", "cancel", "confirm", "clear", "update:modelValue"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -6585,8 +6585,8 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$u(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_wd_icon = resolveEasycom(vue.resolveDynamicComponent("wd-icon"), __easycom_1$3);
+  function _sfc_render$v(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_wd_icon = resolveEasycom(vue.resolveDynamicComponent("wd-icon"), __easycom_1$4);
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -6900,7 +6900,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$u], ["__scopeId", "data-v-2a8ca3bd"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-datetime-picker/wd-datetime-picker.vue"]]);
+  const __easycom_1$3 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["render", _sfc_render$v], ["__scopeId", "data-v-2a8ca3bd"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-datetime-picker/wd-datetime-picker.vue"]]);
   const textareaProps = {
     ...baseProps,
     /**
@@ -7148,7 +7148,7 @@ if (uni.restoreGlobal) {
      */
     markerSide: makeStringProp("before")
   };
-  const __default__$h = {
+  const __default__$i = {
     name: "wd-textarea",
     options: {
       virtualHost: true,
@@ -7156,8 +7156,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$u = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$h,
+  const _sfc_main$v = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$i,
     props: textareaProps,
     emits: [
       "update:modelValue",
@@ -7316,12 +7316,12 @@ if (uni.restoreGlobal) {
       function onClickPrefixIcon() {
         emit("clickprefixicon");
       }
-      const __returned__ = { translate, props, emit, slots, placeholderValue, clearing, focused, focusing, inputValue, cell, form, showClear, showWordCount, errorMessage, isRequired, currentLength, rootClass, labelClass, inputPlaceholderClass, countClass, labelStyle, initState, formatValue, handleClear, handleBlur, handleFocus, handleInput, handleKeyboardheightchange, handleConfirm, handleLineChange, onClickPrefixIcon, wdIcon: __easycom_1$3 };
+      const __returned__ = { translate, props, emit, slots, placeholderValue, clearing, focused, focusing, inputValue, cell, form, showClear, showWordCount, errorMessage, isRequired, currentLength, rootClass, labelClass, inputPlaceholderClass, countClass, labelStyle, initState, formatValue, handleClear, handleBlur, handleFocus, handleInput, handleKeyboardheightchange, handleConfirm, handleLineChange, onClickPrefixIcon, wdIcon: __easycom_1$4 };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$t(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$u(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -7460,11 +7460,11 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["render", _sfc_render$t], ["__scopeId", "data-v-7d71e04e"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-textarea/wd-textarea.vue"]]);
+  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$u], ["__scopeId", "data-v-7d71e04e"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-textarea/wd-textarea.vue"]]);
   const videoPreviewProps = {
     ...baseProps
   };
-  const __default__$g = {
+  const __default__$h = {
     name: "wd-video-preview",
     options: {
       addGlobalClass: true,
@@ -7472,8 +7472,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$t = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$g,
+  const _sfc_main$u = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$h,
     props: videoPreviewProps,
     setup(__props, { expose: __expose }) {
       const showPopup = vue.ref(false);
@@ -7499,12 +7499,12 @@ if (uni.restoreGlobal) {
         open,
         close
       });
-      const __returned__ = { showPopup, previdewVideo, open, close, handleClosed, wdIcon: __easycom_1$3 };
+      const __returned__ = { showPopup, previdewVideo, open, close, handleClosed, wdIcon: __easycom_1$4 };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$s(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$t(_ctx, _cache, $props, $setup, $data, $options) {
     return $setup.showPopup ? (vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -7541,7 +7541,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     )) : vue.createCommentVNode("v-if", true);
   }
-  const wdVideoPreview = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["render", _sfc_render$s], ["__scopeId", "data-v-f37e4d17"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-video-preview/wd-video-preview.vue"]]);
+  const wdVideoPreview = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["render", _sfc_render$t], ["__scopeId", "data-v-f37e4d17"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-video-preview/wd-video-preview.vue"]]);
   const uploadProps = {
     ...baseProps,
     /**
@@ -7750,7 +7750,7 @@ if (uni.restoreGlobal) {
      */
     extension: Array
   };
-  const __default__$f = {
+  const __default__$g = {
     name: "wd-upload",
     options: {
       addGlobalClass: true,
@@ -7758,8 +7758,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$s = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$f,
+  const _sfc_main$t = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$g,
     props: uploadProps,
     emits: ["fail", "change", "success", "progress", "oversize", "chooseerror", "remove", "update:fileList"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -8174,12 +8174,12 @@ if (uni.restoreGlobal) {
       function isImage(file) {
         return file.name && isImageUrl(file.name) || isImageUrl(file.url);
       }
-      const __returned__ = { props, emit, translate, uploadFiles, showUpload, videoPreview, startUpload, abort, chooseFile, UPLOAD_STATUS: UPLOAD_STATUS2, emitFileList, startUploadFiles, getImageInfo, initFile, handleError, handleSuccess, handleProgress, onChooseFile, handleChoose, handleRemove, removeFile, handlePreviewFile, handlePreviewImage, handlePreviewVieo, onPreviewImage, onPreviewVideo, onPreviewFile, isVideo, isImage, wdIcon: __easycom_1$3, wdVideoPreview, wdLoading };
+      const __returned__ = { props, emit, translate, uploadFiles, showUpload, videoPreview, startUpload, abort, chooseFile, UPLOAD_STATUS: UPLOAD_STATUS2, emitFileList, startUploadFiles, getImageInfo, initFile, handleError, handleSuccess, handleProgress, onChooseFile, handleChoose, handleRemove, removeFile, handlePreviewFile, handlePreviewImage, handlePreviewVieo, onPreviewImage, onPreviewVideo, onPreviewFile, isVideo, isImage, wdIcon: __easycom_1$4, wdVideoPreview, wdLoading };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$r(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$s(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       vue.Fragment,
       null,
@@ -8393,7 +8393,7 @@ if (uni.restoreGlobal) {
       /* STABLE_FRAGMENT */
     );
   }
-  const __easycom_4 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["render", _sfc_render$r], ["__scopeId", "data-v-d50d9cde"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-upload/wd-upload.vue"]]);
+  const __easycom_4 = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["render", _sfc_render$s], ["__scopeId", "data-v-d50d9cde"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-upload/wd-upload.vue"]]);
   const messageBoxProps = {
     ...baseProps,
     /**
@@ -8405,7 +8405,7 @@ if (uni.restoreGlobal) {
      */
     rootPortal: makeBooleanProp(false)
   };
-  const __default__$e = {
+  const __default__$f = {
     name: "wd-message-box",
     options: {
       virtualHost: true,
@@ -8413,8 +8413,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$r = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$e,
+  const _sfc_main$s = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$f,
     props: messageBoxProps,
     setup(__props, { expose: __expose }) {
       __expose();
@@ -8611,7 +8611,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$r(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", null, [
       vue.createVNode($setup["wdPopup"], {
         transition: "zoom-in",
@@ -8745,7 +8745,7 @@ if (uni.restoreGlobal) {
       }, 8, ["modelValue", "close-on-click-modal", "lazy-render", "z-index", "root-portal"])
     ]);
   }
-  const __easycom_8 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["render", _sfc_render$q], ["__scopeId", "data-v-c8139c88"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-message-box/wd-message-box.vue"]]);
+  const __easycom_8 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["render", _sfc_render$r], ["__scopeId", "data-v-c8139c88"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-message-box/wd-message-box.vue"]]);
   const badgeProps = {
     ...baseProps,
     /**
@@ -8780,7 +8780,7 @@ if (uni.restoreGlobal) {
      */
     right: numericProp
   };
-  const __default__$d = {
+  const __default__$e = {
     name: "wd-badge",
     options: {
       addGlobalClass: true,
@@ -8788,8 +8788,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$q = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$d,
+  const _sfc_main$r = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$e,
     props: badgeProps,
     setup(__props, { expose: __expose }) {
       __expose();
@@ -8823,7 +8823,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -8848,7 +8848,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const wdBadge = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$p], ["__scopeId", "data-v-6ea9b0eb"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-badge/wd-badge.vue"]]);
+  const wdBadge = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["render", _sfc_render$q], ["__scopeId", "data-v-6ea9b0eb"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-badge/wd-badge.vue"]]);
   const TABBAR_KEY = Symbol("wd-tabbar");
   const tabbarProps = {
     ...baseProps,
@@ -8926,7 +8926,7 @@ if (uni.restoreGlobal) {
      */
     badgeProps: Object
   };
-  const __default__$c = {
+  const __default__$d = {
     name: "wd-tabbar-item",
     options: {
       addGlobalClass: true,
@@ -8934,8 +8934,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$p = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$c,
+  const _sfc_main$q = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$d,
     props: tabbarItemProps,
     setup(__props, { expose: __expose }) {
       __expose();
@@ -8986,12 +8986,12 @@ if (uni.restoreGlobal) {
         const name = isDef(props.name) ? props.name : index.value;
         tabbar && tabbar.setChange({ name });
       }
-      const __returned__ = { props, tabbar, index, customBadgeProps, textStyle, active, handleClick, wdBadge, wdIcon: __easycom_1$3 };
+      const __returned__ = { props, tabbar, index, customBadgeProps, textStyle, active, handleClick, wdBadge, wdIcon: __easycom_1$4 };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -9037,8 +9037,8 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$o], ["__scopeId", "data-v-5b5379ae"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-tabbar-item/wd-tabbar-item.vue"]]);
-  const __default__$b = {
+  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$p], ["__scopeId", "data-v-5b5379ae"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-tabbar-item/wd-tabbar-item.vue"]]);
+  const __default__$c = {
     name: "wd-tabbar",
     options: {
       addGlobalClass: true,
@@ -9046,8 +9046,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$o = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$b,
+  const _sfc_main$p = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$c,
     props: tabbarProps,
     emits: ["change", "update:modelValue"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -9104,7 +9104,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -9129,8 +9129,8 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$n], ["__scopeId", "data-v-70467ab8"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-tabbar/wd-tabbar.vue"]]);
-  const _sfc_main$n = {
+  const __easycom_1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$o], ["__scopeId", "data-v-70467ab8"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-tabbar/wd-tabbar.vue"]]);
+  const _sfc_main$o = {
     __name: "TabBar",
     props: {
       tabbar: {
@@ -9172,9 +9172,9 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   };
-  function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_wd_tabbar_item = resolveEasycom(vue.resolveDynamicComponent("wd-tabbar-item"), __easycom_0$2);
-    const _component_wd_tabbar = resolveEasycom(vue.resolveDynamicComponent("wd-tabbar"), __easycom_1$1);
+    const _component_wd_tabbar = resolveEasycom(vue.resolveDynamicComponent("wd-tabbar"), __easycom_1$2);
     return vue.openBlock(), vue.createElementBlock("view", { class: "footer" }, [
       vue.createVNode(_component_wd_tabbar, {
         modelValue: $setup.tabberValue,
@@ -9203,8 +9203,8 @@ if (uni.restoreGlobal) {
       }, 8, ["modelValue"])
     ]);
   }
-  const TabBarVue = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$m], ["__scopeId", "data-v-89ca1f91"], ["__file", "E:/开发/app/security-environment/components/TabBar.vue"]]);
-  const _sfc_main$m = {
+  const TabBarVue = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$n], ["__scopeId", "data-v-89ca1f91"], ["__file", "E:/开发/app/security-environment/components/TabBar.vue"]]);
+  const _sfc_main$n = {
     __name: "hazardReporting",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -9402,9 +9402,9 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   };
-  function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_wd_picker = resolveEasycom(vue.resolveDynamicComponent("wd-picker"), __easycom_0$3);
-    const _component_wd_datetime_picker = resolveEasycom(vue.resolveDynamicComponent("wd-datetime-picker"), __easycom_1$2);
+    const _component_wd_datetime_picker = resolveEasycom(vue.resolveDynamicComponent("wd-datetime-picker"), __easycom_1$3);
     const _component_wd_input = resolveEasycom(vue.resolveDynamicComponent("wd-input"), __easycom_2$1);
     const _component_wd_textarea = resolveEasycom(vue.resolveDynamicComponent("wd-textarea"), __easycom_2);
     const _component_wd_upload = resolveEasycom(vue.resolveDynamicComponent("wd-upload"), __easycom_4);
@@ -9413,7 +9413,7 @@ if (uni.restoreGlobal) {
     const _component_wd_form = resolveEasycom(vue.resolveDynamicComponent("wd-form"), __easycom_7);
     const _component_wd_message_box = resolveEasycom(vue.resolveDynamicComponent("wd-message-box"), __easycom_8);
     const _component_wd_toast = resolveEasycom(vue.resolveDynamicComponent("wd-toast"), __easycom_9$1);
-    return vue.openBlock(), vue.createElementBlock("view", null, [
+    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-app--wrapper" }, [
       vue.createCommentVNode(" form表单 "),
       vue.createElementVNode("view", null, [
         vue.createVNode(_component_wd_form, {
@@ -9479,7 +9479,7 @@ if (uni.restoreGlobal) {
               "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => $setup.formstate.hazardSource = $event),
               label: "隐患来源",
               prop: "hazardSource",
-              rules: [{ required: true, message: "请输入隐患来源" }]
+              rules: [{ required: false, message: "请输入隐患来源" }]
             }, null, 8, ["modelValue"]),
             vue.createVNode(_component_wd_picker, {
               "align-right": "",
@@ -9488,7 +9488,7 @@ if (uni.restoreGlobal) {
               modelValue: $setup.formstate.level,
               "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => $setup.formstate.level = $event),
               prop: "level",
-              rules: [{ required: true, message: "请选择隐患等级" }]
+              rules: [{ required: false, message: "请选择隐患等级" }]
             }, null, 8, ["columns", "modelValue"]),
             vue.createVNode(_component_wd_cell, {
               title: "现场图片上传",
@@ -9529,7 +9529,7 @@ if (uni.restoreGlobal) {
       vue.createVNode(_component_wd_toast)
     ]);
   }
-  const PagesHazardReportingHazardReporting = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$l], ["__file", "E:/开发/app/security-environment/pages/hazardReporting/hazardReporting.vue"]]);
+  const PagesHazardReportingHazardReporting = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$m], ["__file", "E:/开发/app/security-environment/pages/hazardReporting/hazardReporting.vue"]]);
   const searchProps = {
     ...baseProps,
     customInputClass: makeStringProp(""),
@@ -9609,7 +9609,7 @@ if (uni.restoreGlobal) {
      */
     placeholderClass: makeStringProp("")
   };
-  const __default__$a = {
+  const __default__$b = {
     name: "wd-search",
     options: {
       virtualHost: true,
@@ -9617,8 +9617,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$l = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$a,
+  const _sfc_main$m = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$b,
     props: searchProps,
     emits: ["update:modelValue", "change", "clear", "search", "focus", "blur", "cancel"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -9733,12 +9733,12 @@ if (uni.restoreGlobal) {
           value: inputValue.value
         });
       }
-      const __returned__ = { props, emit, translate, isFocused, showInput, inputValue, showPlaceHolder, clearing, rootClass, coverStyle, hackFocus, closeCover, handleInput, handleClear, handleConfirm, handleFocus, handleBlur, handleCancel, wdIcon: __easycom_1$3 };
+      const __returned__ = { props, emit, translate, isFocused, showInput, inputValue, showPlaceHolder, clearing, rootClass, coverStyle, hackFocus, closeCover, handleInput, handleClear, handleConfirm, handleFocus, handleBlur, handleCancel, wdIcon: __easycom_1$4 };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -9823,7 +9823,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$k], ["__scopeId", "data-v-cc0202be"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-search/wd-search.vue"]]);
+  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$l], ["__scopeId", "data-v-cc0202be"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-search/wd-search.vue"]]);
   const actionSheetProps = {
     ...baseProps,
     /**
@@ -9903,7 +9903,7 @@ if (uni.restoreGlobal) {
      */
     rootPortal: makeBooleanProp(false)
   };
-  const __default__$9 = {
+  const __default__$a = {
     name: "wd-action-sheet",
     options: {
       addGlobalClass: true,
@@ -9911,8 +9911,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$k = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$9,
+  const _sfc_main$l = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$a,
     props: actionSheetProps,
     emits: ["select", "click-modal", "cancel", "closed", "close", "open", "opened", "update:modelValue"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -9980,12 +9980,12 @@ if (uni.restoreGlobal) {
       function handleClosed() {
         emit("closed");
       }
-      const __returned__ = { props, emit, formatPanels, showPopup, isPanelArray, computedValue, select, handleClickModal, handleCancel, close, handleOpen, handleOpened, handleClosed, wdPopup: __easycom_13, wdIcon: __easycom_1$3, wdLoading };
+      const __returned__ = { props, emit, formatPanels, showPopup, isPanelArray, computedValue, select, handleClickModal, handleCancel, close, handleOpen, handleOpened, handleClosed, wdPopup: __easycom_13, wdIcon: __easycom_1$4, wdLoading };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", null, [
       vue.createVNode($setup["wdPopup"], {
         "custom-class": "wd-action-sheet__popup",
@@ -10141,7 +10141,7 @@ if (uni.restoreGlobal) {
       }, 8, ["custom-style", "modelValue", "duration", "close-on-click-modal", "safe-area-inset-bottom", "lazy-render", "root-portal", "z-index"])
     ]);
   }
-  const wdActionSheet = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$j], ["__scopeId", "data-v-03619ba9"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-action-sheet/wd-action-sheet.vue"]]);
+  const wdActionSheet = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$k], ["__scopeId", "data-v-03619ba9"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-action-sheet/wd-action-sheet.vue"]]);
   const CHECKBOX_GROUP_KEY = Symbol("wd-checkbox-group");
   const checkboxGroupProps = {
     ...baseProps,
@@ -10237,7 +10237,7 @@ if (uni.restoreGlobal) {
      */
     maxWidth: String
   };
-  const __default__$8 = {
+  const __default__$9 = {
     name: "wd-checkbox",
     options: {
       addGlobalClass: true,
@@ -10245,8 +10245,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$j = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$8,
+  const _sfc_main$k = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$9,
     props: checkboxProps,
     emits: ["change", "update:modelValue"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -10339,12 +10339,12 @@ if (uni.restoreGlobal) {
           });
         }
       }
-      const __returned__ = { props, emit, checkboxGroup, index, isChecked, isFirst, isLast, proxy, innerShape, innerCheckedColor, innerDisabled, innerInline, innerCell, innerSize, checkName, toggle, wdIcon: __easycom_1$3 };
+      const __returned__ = { props, emit, checkboxGroup, index, isChecked, isFirst, isLast, proxy, innerShape, innerCheckedColor, innerDisabled, innerInline, innerCell, innerSize, checkName, toggle, wdIcon: __easycom_1$4 };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -10406,8 +10406,8 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const wdCheckbox = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$i], ["__scopeId", "data-v-66fc790e"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-checkbox/wd-checkbox.vue"]]);
-  const __default__$7 = {
+  const wdCheckbox = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$j], ["__scopeId", "data-v-66fc790e"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-checkbox/wd-checkbox.vue"]]);
+  const __default__$8 = {
     name: "wd-checkbox-group",
     options: {
       addGlobalClass: true,
@@ -10415,8 +10415,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$i = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$7,
+  const _sfc_main$j = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$8,
     props: checkboxGroupProps,
     emits: ["change", "update:modelValue"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -10481,7 +10481,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -10495,7 +10495,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const wdCheckboxGroup = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$h], ["__scopeId", "data-v-395de5f2"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-checkbox-group/wd-checkbox-group.vue"]]);
+  const wdCheckboxGroup = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$i], ["__scopeId", "data-v-395de5f2"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-checkbox-group/wd-checkbox-group.vue"]]);
   const RADIO_GROUP_KEY = Symbol("wd-radio-group");
   const radioGroupProps = {
     ...baseProps,
@@ -10551,7 +10551,7 @@ if (uni.restoreGlobal) {
       type: String
     }
   };
-  const __default__$6 = {
+  const __default__$7 = {
     name: "wd-radio",
     options: {
       virtualHost: true,
@@ -10559,8 +10559,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$h = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$6,
+  const _sfc_main$i = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$7,
     props: radioProps,
     setup(__props, { expose: __expose }) {
       __expose();
@@ -10624,12 +10624,12 @@ if (uni.restoreGlobal) {
           radioGroup.updateValue(value);
         }
       }
-      const __returned__ = { props, radioGroup, isChecked, shapeValue, checkedColorValue, disabledValue, inlineValue, sizeValue, cellValue, iconPlacement, handleClick, wdIcon: __easycom_1$3 };
+      const __returned__ = { props, radioGroup, isChecked, shapeValue, checkedColorValue, disabledValue, inlineValue, sizeValue, cellValue, iconPlacement, handleClick, wdIcon: __easycom_1$4 };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -10671,8 +10671,8 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_11 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$g], ["__scopeId", "data-v-a54631cc"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-radio/wd-radio.vue"]]);
-  const __default__$5 = {
+  const __easycom_11 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$h], ["__scopeId", "data-v-a54631cc"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-radio/wd-radio.vue"]]);
+  const __default__$6 = {
     name: "wd-radio-group",
     options: {
       virtualHost: true,
@@ -10680,8 +10680,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$g = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$5,
+  const _sfc_main$h = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$6,
     props: radioGroupProps,
     emits: ["change", "update:modelValue"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -10710,7 +10710,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -10724,7 +10724,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_12 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__scopeId", "data-v-1a9e9b05"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-radio-group/wd-radio-group.vue"]]);
+  const __easycom_12 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$g], ["__scopeId", "data-v-1a9e9b05"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-radio-group/wd-radio-group.vue"]]);
   const selectPickerProps = {
     ...baseProps,
     /** 选择器左侧文案 */
@@ -10828,7 +10828,7 @@ if (uni.restoreGlobal) {
      */
     markerSide: makeStringProp("before")
   };
-  const __default__$4 = {
+  const __default__$5 = {
     name: "wd-select-picker",
     options: {
       addGlobalClass: true,
@@ -10836,8 +10836,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$f = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$4,
+  const _sfc_main$g = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$5,
     props: selectPickerProps,
     emits: ["change", "cancel", "confirm", "clear", "update:modelValue", "open", "close"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -11111,9 +11111,9 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_wd_icon = resolveEasycom(vue.resolveDynamicComponent("wd-icon"), __easycom_1$3);
-    const _component_wd_search = resolveEasycom(vue.resolveDynamicComponent("wd-search"), __easycom_1);
+  function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_wd_icon = resolveEasycom(vue.resolveDynamicComponent("wd-icon"), __easycom_1$4);
+    const _component_wd_search = resolveEasycom(vue.resolveDynamicComponent("wd-search"), __easycom_1$1);
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -11413,7 +11413,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-b8ce50f5"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-select-picker/wd-select-picker.vue"]]);
+  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__scopeId", "data-v-b8ce50f5"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-select-picker/wd-select-picker.vue"]]);
   const ROW_KEY = Symbol("wd-row");
   const rowProps = {
     ...baseProps,
@@ -11433,7 +11433,7 @@ if (uni.restoreGlobal) {
      */
     offset: makeNumberProp(0)
   };
-  const __default__$3 = {
+  const __default__$4 = {
     name: "wd-col",
     options: {
       addGlobalClass: true,
@@ -11441,8 +11441,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$e = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$3,
+  const _sfc_main$f = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$4,
     props: colProps,
     setup(__props, { expose: __expose }) {
       __expose();
@@ -11468,7 +11468,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -11483,8 +11483,8 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_9 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__scopeId", "data-v-2afa91f2"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-col/wd-col.vue"]]);
-  const __default__$2 = {
+  const __easycom_9 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-2afa91f2"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-col/wd-col.vue"]]);
+  const __default__$3 = {
     name: "wd-row",
     options: {
       virtualHost: true,
@@ -11492,8 +11492,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$d = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$2,
+  const _sfc_main$e = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$3,
     props: rowProps,
     setup(__props, { expose: __expose }) {
       __expose();
@@ -11516,7 +11516,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   });
-  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -11531,8 +11531,8 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_10 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__scopeId", "data-v-88acc730"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-row/wd-row.vue"]]);
-  const _sfc_main$c = {
+  const __easycom_10 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__scopeId", "data-v-88acc730"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-row/wd-row.vue"]]);
+  const _sfc_main$d = {
     __name: "hotWork",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -11793,10 +11793,10 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   };
-  function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_wd_picker = resolveEasycom(vue.resolveDynamicComponent("wd-picker"), __easycom_0$3);
     const _component_wd_input = resolveEasycom(vue.resolveDynamicComponent("wd-input"), __easycom_2$1);
-    const _component_wd_datetime_picker = resolveEasycom(vue.resolveDynamicComponent("wd-datetime-picker"), __easycom_1$2);
+    const _component_wd_datetime_picker = resolveEasycom(vue.resolveDynamicComponent("wd-datetime-picker"), __easycom_1$3);
     const _component_wd_textarea = resolveEasycom(vue.resolveDynamicComponent("wd-textarea"), __easycom_2);
     const _component_wd_select_picker = resolveEasycom(vue.resolveDynamicComponent("wd-select-picker"), __easycom_3);
     const _component_wd_button = resolveEasycom(vue.resolveDynamicComponent("wd-button"), __easycom_6);
@@ -11855,10 +11855,12 @@ if (uni.restoreGlobal) {
             }, null, 8, ["columns", "modelValue", "disabled"]),
             vue.createVNode(_component_wd_picker, {
               "align-right": "",
+              prop: "level",
               columns: $setup.level,
               label: "动火级别",
               modelValue: $setup.formstate.level,
-              "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => $setup.formstate.level = $event)
+              "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => $setup.formstate.level = $event),
+              rules: [{ required: true, message: "请选择动火级别" }]
             }, null, 8, ["columns", "modelValue"]),
             vue.createVNode(_component_wd_datetime_picker, {
               label: "动火时间",
@@ -12198,7 +12200,7 @@ if (uni.restoreGlobal) {
       vue.createVNode(_component_wd_toast)
     ]);
   }
-  const PagesHotWorkHotWork = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__file", "E:/开发/app/security-environment/pages/hotWork/hotWork.vue"]]);
+  const PagesHotWorkHotWork = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__file", "E:/开发/app/security-environment/pages/hotWork/hotWork.vue"]]);
   const tagProps = {
     ...baseProps,
     /**
@@ -12263,7 +12265,7 @@ if (uni.restoreGlobal) {
      */
     mark: makeBooleanProp(false)
   };
-  const __default__$1 = {
+  const __default__$2 = {
     name: "wd-tag",
     options: {
       addGlobalClass: true,
@@ -12271,8 +12273,8 @@ if (uni.restoreGlobal) {
       styleIsolation: "shared"
     }
   };
-  const _sfc_main$b = /* @__PURE__ */ vue.defineComponent({
-    ...__default__$1,
+  const _sfc_main$c = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$2,
     props: tagProps,
     emits: ["click", "close", "confirm"],
     setup(__props, { expose: __expose, emit: __emit }) {
@@ -12364,12 +12366,12 @@ if (uni.restoreGlobal) {
       function setDynamicInput() {
         dynamicInput.value = false;
       }
-      const __returned__ = { props, emit, translate, tagClass, dynamicValue, dynamicInput, rootClass, rootStyle, textStyle, computeTagClass, handleClick, handleClose, handleAdd, handleBlur, handleConfirm, setDynamicInput, wdIcon: __easycom_1$3 };
+      const __returned__ = { props, emit, translate, tagClass, dynamicValue, dynamicInput, rootClass, rootStyle, textStyle, computeTagClass, handleClick, handleClose, handleAdd, handleBlur, handleConfirm, setDynamicInput, wdIcon: __easycom_1$4 };
       Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
       return __returned__;
     }
   });
-  function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -12455,8 +12457,8 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__scopeId", "data-v-97328e6e"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-tag/wd-tag.vue"]]);
-  const _sfc_main$a = {
+  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__scopeId", "data-v-97328e6e"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-tag/wd-tag.vue"]]);
+  const _sfc_main$b = {
     __name: "onSiteInspection",
     setup(__props, { expose: __expose }) {
       __expose();
@@ -12466,7 +12468,7 @@ if (uni.restoreGlobal) {
           request({
             url: `/${config.mesMain}/hazardcheck/execution/taskList`,
             data: {
-              area: ""
+              areaCode: code.value
             },
             needAuth: true,
             method: "GET"
@@ -12474,7 +12476,7 @@ if (uni.restoreGlobal) {
           request({
             url: `/${config.mesMain}/hazardcheck/execution/taskListEd`,
             data: {
-              area: ""
+              areaCode: code.value
             },
             needAuth: true,
             method: "GET"
@@ -12484,7 +12486,7 @@ if (uni.restoreGlobal) {
             ...d1.list,
             ...d2.list
           ];
-          formatAppLog("log", "at pages/onSiteInspection/onSiteInspection.vue:70", inspectionTaskList.value);
+          formatAppLog("log", "at pages/onSiteInspection/onSiteInspection.vue:75", inspectionTaskList.value);
         }).finally(() => {
           uni.stopPullDownRefresh();
         });
@@ -12492,6 +12494,17 @@ if (uni.restoreGlobal) {
       function toDetails(deteils) {
         uni.navigateTo({
           url: `/pages/inspectionDetails/inspectionDetails?testId=${deteils.id}`
+        });
+      }
+      const code = vue.ref("");
+      function scan() {
+        uni.scanCode({
+          success: function(res) {
+            formatAppLog("log", "at pages/onSiteInspection/onSiteInspection.vue:99", "条码类型：" + res.scanType);
+            formatAppLog("log", "at pages/onSiteInspection/onSiteInspection.vue:100", "条码内容：" + res.result);
+            code.value = res.result;
+            queryDate();
+          }
         });
       }
       vue.onMounted(() => {
@@ -12503,7 +12516,7 @@ if (uni.restoreGlobal) {
       onShow(() => {
         queryDate();
       });
-      const __returned__ = { inspectionTaskList, queryDate, toDetails, onMounted: vue.onMounted, ref: vue.ref, get request() {
+      const __returned__ = { inspectionTaskList, queryDate, toDetails, code, scan, onMounted: vue.onMounted, ref: vue.ref, get request() {
         return request;
       }, get setToken() {
         return setToken;
@@ -12520,14 +12533,25 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   };
-  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_wd_tag = resolveEasycom(vue.resolveDynamicComponent("wd-tag"), __easycom_0$1);
-    const _component_wd_icon = resolveEasycom(vue.resolveDynamicComponent("wd-icon"), __easycom_1$3);
+  function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_wd_input = resolveEasycom(vue.resolveDynamicComponent("wd-input"), __easycom_2$1);
+    const _component_wd_tag = resolveEasycom(vue.resolveDynamicComponent("wd-tag"), __easycom_1);
+    const _component_wd_icon = resolveEasycom(vue.resolveDynamicComponent("wd-icon"), __easycom_1$4);
     const _component_wd_cell = resolveEasycom(vue.resolveDynamicComponent("wd-cell"), __easycom_5);
     const _component_wd_cell_group = resolveEasycom(vue.resolveDynamicComponent("wd-cell-group"), __easycom_3$1);
     const _component_wd_message_box = resolveEasycom(vue.resolveDynamicComponent("wd-message-box"), __easycom_8);
     const _component_wd_toast = resolveEasycom(vue.resolveDynamicComponent("wd-toast"), __easycom_9$1);
-    return vue.openBlock(), vue.createElementBlock("view", { style: { "margin-top": "1em" } }, [
+    return vue.openBlock(), vue.createElementBlock("view", null, [
+      vue.createVNode(_component_wd_input, {
+        "align-right": "",
+        modelValue: $setup.code,
+        "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $setup.code = $event),
+        label: "区域编码",
+        "suffix-icon": "scan",
+        readonly: "",
+        onClick: _cache[1] || (_cache[1] = ($event) => $setup.scan()),
+        style: { "margin": "1em 0" }
+      }, null, 8, ["modelValue"]),
       vue.createVNode(_component_wd_cell_group, null, {
         default: vue.withCtx(() => [
           (vue.openBlock(true), vue.createElementBlock(
@@ -12611,7 +12635,7 @@ if (uni.restoreGlobal) {
       vue.createVNode(_component_wd_toast)
     ]);
   }
-  const PagesOnSiteInspectionOnSiteInspection = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__file", "E:/开发/app/security-environment/pages/onSiteInspection/onSiteInspection.vue"]]);
+  const PagesOnSiteInspectionOnSiteInspection = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__file", "E:/开发/app/security-environment/pages/onSiteInspection/onSiteInspection.vue"]]);
   /*!
     * vue-router v4.3.0
     * (c) 2024 Eduardo San Martin Morote
@@ -12638,12 +12662,14 @@ if (uni.restoreGlobal) {
   function useRoute() {
     return vue.inject(routeLocationKey);
   }
-  const _sfc_main$9 = {
+  const _sfc_main$a = {
     __name: "inspectionDetails",
     setup(__props, { expose: __expose }) {
       __expose();
       const editItemId = vue.ref(-1);
-      const { success: showSuccess2 } = useToast();
+      const {
+        success: showSuccess2
+      } = useToast();
       const formstate = vue.ref();
       const form = vue.ref();
       function queryDetails() {
@@ -12655,7 +12681,7 @@ if (uni.restoreGlobal) {
           needAuth: true,
           method: "GET"
         }).then((data) => {
-          formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:81", data);
+          formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:90", data);
           if (!data)
             data = {};
           data.result = data.result || data.result === 0 ? data.result : 1;
@@ -12708,7 +12734,7 @@ if (uni.restoreGlobal) {
             });
           }
         }).catch((error) => {
-          formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:141", error, "error");
+          formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:150", error, "error");
         });
       }
       const isReported = vue.ref(false);
@@ -12733,8 +12759,8 @@ if (uni.restoreGlobal) {
           return;
         uni.scanCode({
           success: function(res) {
-            formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:177", "条码类型：" + res.scanType);
-            formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:178", "条码内容：" + res.result);
+            formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:186", "条码类型：" + res.scanType);
+            formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:187", "条码内容：" + res.result);
             formstate.value.sign = res.result;
           }
         });
@@ -12742,7 +12768,7 @@ if (uni.restoreGlobal) {
       const fileList = vue.ref([]);
       const action = `${config.baseURL}/${config.mesMain}/accident/register/uploadFile`;
       onLoad((option) => {
-        formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:196", "接收到的testId参数是：", option);
+        formatAppLog("log", "at pages/inspectionDetails/inspectionDetails.vue:205", "接收到的testId参数是：", option);
         editItemId.value = option.testId;
         queryDetails();
       });
@@ -12772,7 +12798,7 @@ if (uni.restoreGlobal) {
       return __returned__;
     }
   };
-  function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_wd_input = resolveEasycom(vue.resolveDynamicComponent("wd-input"), __easycom_2$1);
     const _component_wd_select_picker = resolveEasycom(vue.resolveDynamicComponent("wd-select-picker"), __easycom_3);
     const _component_wd_upload = resolveEasycom(vue.resolveDynamicComponent("wd-upload"), __easycom_4);
@@ -12838,19 +12864,11 @@ if (uni.restoreGlobal) {
               placeholder: "",
               readonly: ""
             }, null, 8, ["modelValue"]),
-            vue.createVNode(_component_wd_input, {
-              "align-right": "",
-              modelValue: $setup.formstate.content,
-              "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => $setup.formstate.content = $event),
-              label: "内容",
-              placeholder: "",
-              readonly: ""
-            }, null, 8, ["modelValue"]),
             vue.createVNode(_component_wd_select_picker, {
               "align-right": "",
               label: "巡检结果",
               modelValue: $setup.formstate.result,
-              "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => $setup.formstate.result = $event),
+              "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => $setup.formstate.result = $event),
               columns: $setup.resultList,
               "show-confirm": false,
               type: "radio",
@@ -12861,18 +12879,18 @@ if (uni.restoreGlobal) {
             vue.createVNode(_component_wd_input, {
               "align-right": "",
               modelValue: $setup.formstate.remark,
-              "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => $setup.formstate.remark = $event),
+              "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => $setup.formstate.remark = $event),
               label: "备注",
               disabled: $setup.formstate.state === 1
             }, null, 8, ["modelValue", "disabled"]),
             vue.createVNode(_component_wd_input, {
               "align-right": "",
               modelValue: $setup.formstate.sign,
-              "onUpdate:modelValue": _cache[9] || (_cache[9] = ($event) => $setup.formstate.sign = $event),
+              "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => $setup.formstate.sign = $event),
               label: "区域编码",
               "suffix-icon": "scan",
               readonly: "",
-              onClick: _cache[10] || (_cache[10] = ($event) => $setup.scan()),
+              onClick: _cache[9] || (_cache[9] = ($event) => $setup.scan()),
               prop: "sign",
               rules: [{ required: true, message: "请扫描区域编码" }],
               disabled: $setup.formstate.state === 1
@@ -12884,7 +12902,7 @@ if (uni.restoreGlobal) {
               default: vue.withCtx(() => [
                 vue.createVNode(_component_wd_upload, {
                   "file-list": $setup.fileList,
-                  "onUpdate:fileList": _cache[11] || (_cache[11] = ($event) => $setup.fileList = $event),
+                  "onUpdate:fileList": _cache[10] || (_cache[10] = ($event) => $setup.fileList = $event),
                   multiple: "",
                   "image-mode": "aspectFill",
                   action: $setup.action,
@@ -12936,7 +12954,243 @@ if (uni.restoreGlobal) {
       vue.createVNode(_component_wd_toast)
     ]);
   }
-  const PagesInspectionDetailsInspectionDetails = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__file", "E:/开发/app/security-environment/pages/inspectionDetails/inspectionDetails.vue"]]);
+  const PagesInspectionDetailsInspectionDetails = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__file", "E:/开发/app/security-environment/pages/inspectionDetails/inspectionDetails.vue"]]);
+  const textProps = {
+    ...baseProps,
+    /**
+     * 主题类型
+     * 类型：string
+     * 可选值：'default' /'primary' / 'error' / 'warning' / 'success'
+     * 默认值：'default'
+     */
+    type: makeStringProp("default"),
+    /**
+     * 文字
+     * 类型：string | number
+     * 默认值：'空字符串'
+     */
+    text: makeNumericProp(""),
+    /**
+     * 字体大小
+     * 类型：string
+     * 默认值：'空字符串'
+     */
+    size: makeStringProp(""),
+    /**
+     * 文本处理的匹配模式
+     * 可选值：'text-普通文本' / 'date - 日期' / 'phone - 手机号' / 'name - 姓名' / 'price - 金额'
+     * 类型：string
+     * 默认值：'text'
+     */
+    mode: makeStringProp("text"),
+    /**
+     * 文字装饰，下划线，中划线等
+     * 可选值：'underline/line-through/overline'
+     * 类型：string
+     * 默认值：'none'
+     */
+    decoration: makeStringProp("none"),
+    /**
+     * mode=phone时，点击文本是否拨打电话
+     * 类型：boolean
+     * 默认值：false
+     */
+    call: makeBooleanProp(false),
+    /**
+     * 是否粗体，默认normal
+     * 类型：boolean
+     * 默认值：false
+     */
+    bold: makeBooleanProp(false),
+    /**
+     * 是否脱敏,当mode为phone和name时生效
+     * 类型：boolean
+     * 默认值：false
+     */
+    format: makeBooleanProp(false),
+    /**
+     * 文本颜色
+     * 类型：string
+     * 默认值：''
+     */
+    color: makeStringProp(""),
+    /**
+     * 前置插槽
+     * 类型：string
+     * 默认值：''
+     */
+    prefix: String,
+    /**
+     * 后置插槽
+     * 类型：string
+     * 默认值：''
+     */
+    suffix: String,
+    /**
+     * 文本显示的行数，如果设置，超出此行数，将会显示省略号。最大值为5。
+     */
+    lines: Number,
+    /**
+     * 文本行高
+     * 类型：string
+     * 默认值：''
+     */
+    lineHeight: makeStringProp(""),
+    /**
+     * 自定义根节点样式
+     */
+    customStyle: makeStringProp(""),
+    /**
+     * 自定义根节点样式类
+     */
+    customClass: makeStringProp("")
+  };
+  const __default__$1 = {
+    name: "wd-text",
+    options: {
+      virtualHost: true,
+      addGlobalClass: true,
+      styleIsolation: "shared"
+    }
+  };
+  const _sfc_main$9 = /* @__PURE__ */ vue.defineComponent({
+    ...__default__$1,
+    props: textProps,
+    emits: ["click"],
+    setup(__props, { expose: __expose, emit: __emit }) {
+      __expose();
+      const props = __props;
+      const emit = __emit;
+      const textClass = vue.ref("");
+      vue.watch(
+        () => ({
+          type: props.type,
+          text: props.text,
+          mode: props.mode,
+          color: props.color,
+          bold: props.bold,
+          lines: props.lines,
+          format: props.format
+        }),
+        ({ type }) => {
+          const types = ["primary", "error", "warning", "success", "default"];
+          if (type && !types.includes(type)) {
+            formatAppLog("error", "at uni_modules/wot-design-uni/components/wd-text/wd-text.vue:48", `type must be one of ${types.toString()}`);
+          }
+          computeTextClass();
+        },
+        { deep: true, immediate: true }
+      );
+      const rootClass = vue.computed(() => {
+        return `wd-text ${props.customClass} ${textClass.value}`;
+      });
+      const rootStyle = vue.computed(() => {
+        const rootStyle2 = {};
+        if (props.color) {
+          rootStyle2["color"] = props.color;
+        }
+        if (props.size) {
+          rootStyle2["font-size"] = `${props.size}`;
+        }
+        if (props.lineHeight) {
+          rootStyle2["line-height"] = `${props.lineHeight}`;
+        }
+        if (props.decoration) {
+          rootStyle2["text-decoration"] = `${props.decoration}`;
+        }
+        return `${objToStyle(rootStyle2)}${props.customStyle}`;
+      });
+      function computeTextClass() {
+        const { type, color, bold, lines } = props;
+        const textClassList = [];
+        if (!color) {
+          textClassList.push(`is-${type}`);
+        }
+        if (isDef(lines)) {
+          textClassList.push(`is-lines-${lines}`);
+        }
+        bold && textClassList.push("is-bold");
+        textClass.value = textClassList.join(" ");
+      }
+      function formatText(text, format, mode) {
+        if (format) {
+          if (mode === "phone") {
+            return text.replace(/^(\d{3})\d{4}(\d{4})$/, "$1****$2");
+          } else if (mode === "name") {
+            return text.replace(/^(.).*(.)$/, "$1**$2");
+          } else {
+            throw new Error("mode must be one of phone or name for encryption");
+          }
+        }
+        return text;
+      }
+      function formatNumber(num) {
+        num = Number(num).toFixed(2);
+        const x = num.split(".");
+        let x1 = x[0];
+        const x2 = x.length > 1 ? "." + x[1] : "";
+        const rgx = /(\d+)(\d{3})/;
+        while (rgx.test(x1)) {
+          x1 = x1.replace(rgx, "$1,$2");
+        }
+        return x1 + x2;
+      }
+      const formattedText = vue.computed(() => {
+        const { text, mode, format } = props;
+        if (mode === "date") {
+          return dayjs(Number(text)).format("YYYY-MM-DD");
+        }
+        if (mode === "price") {
+          return formatNumber(text);
+        }
+        return formatText(`${text}`, format, mode);
+      });
+      function handleClick(event) {
+        emit("click", event);
+      }
+      const __returned__ = { props, emit, textClass, rootClass, rootStyle, computeTextClass, formatText, formatNumber, formattedText, handleClick };
+      Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
+      return __returned__;
+    }
+  });
+  function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock(
+      "text",
+      {
+        onClick: $setup.handleClick,
+        class: vue.normalizeClass($setup.rootClass),
+        style: vue.normalizeStyle($setup.rootStyle)
+      },
+      [
+        _ctx.$slots.prefix || _ctx.prefix ? vue.renderSlot(_ctx.$slots, "prefix", { key: 0 }, () => [
+          vue.createTextVNode(
+            vue.toDisplayString(_ctx.prefix),
+            1
+            /* TEXT */
+          )
+        ], true) : vue.createCommentVNode("v-if", true),
+        vue.createElementVNode(
+          "text",
+          null,
+          vue.toDisplayString($setup.formattedText),
+          1
+          /* TEXT */
+        ),
+        _ctx.$slots.suffix || _ctx.suffix ? vue.renderSlot(_ctx.$slots, "suffix", { key: 1 }, () => [
+          vue.createTextVNode(
+            vue.toDisplayString(_ctx.suffix),
+            1
+            /* TEXT */
+          )
+        ], true) : vue.createCommentVNode("v-if", true)
+      ],
+      6
+      /* CLASS, STYLE */
+    );
+  }
+  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__scopeId", "data-v-24041fa1"], ["__file", "E:/开发/app/security-environment/uni_modules/wot-design-uni/components/wd-text/wd-text.vue"]]);
+  const _imports_0$1 = "/static/xunjian.svg";
+  const _imports_1$1 = "/static/fengxian.svg";
   const _sfc_main$8 = {
     __name: "inspectionTask",
     setup(__props, { expose: __expose }) {
@@ -12971,46 +13225,35 @@ if (uni.restoreGlobal) {
     }
   };
   function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_wd_icon = resolveEasycom(vue.resolveDynamicComponent("wd-icon"), __easycom_1$3);
-    const _component_wd_cell = resolveEasycom(vue.resolveDynamicComponent("wd-cell"), __easycom_5);
-    const _component_wd_cell_group = resolveEasycom(vue.resolveDynamicComponent("wd-cell-group"), __easycom_3$1);
-    return vue.openBlock(), vue.createElementBlock("view", { style: { "margin-top": "1em" } }, [
-      vue.createVNode(_component_wd_cell_group, null, {
-        default: vue.withCtx(() => [
-          vue.createVNode(_component_wd_cell, { title: "隐患巡检" }, {
-            default: vue.withCtx(() => [
-              vue.createVNode(_component_wd_icon, {
-                name: "arrow-right",
-                size: "22px",
-                style: { "line-height": "2em" },
-                center: "",
-                onClick: _cache[0] || (_cache[0] = ($event) => $setup.todo("1"))
-              })
-            ]),
-            _: 1
-            /* STABLE */
-          }),
-          vue.createVNode(_component_wd_cell, { title: "风险巡检" }, {
-            default: vue.withCtx(() => [
-              vue.createVNode(_component_wd_icon, {
-                name: "arrow-right",
-                size: "22px",
-                style: { "line-height": "2em" },
-                center: "",
-                onClick: _cache[1] || (_cache[1] = ($event) => $setup.todo("2"))
-              })
-            ]),
-            _: 1
-            /* STABLE */
-          })
-        ]),
-        _: 1
-        /* STABLE */
+    const _component_wd_text = resolveEasycom(vue.resolveDynamicComponent("wd-text"), __easycom_0$1);
+    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-app--wrapper" }, [
+      vue.createVNode(_component_wd_text, {
+        text: "巡检任务",
+        size: "24px",
+        style: { "margin-left": "1em", "padding-left": "1em", "border-left": "5px solid #2e7bfd" }
       }),
+      vue.createElementVNode("view", { class: "icon_view" }, [
+        vue.createElementVNode("view", {
+          class: "icon_view_item",
+          onClick: _cache[0] || (_cache[0] = ($event) => $setup.todo("1"))
+        }, [
+          vue.createElementVNode("image", { src: _imports_0$1 }),
+          vue.createTextVNode(" 隐患巡检 ")
+        ]),
+        vue.createElementVNode("view", {
+          class: "icon_view_item",
+          onClick: _cache[1] || (_cache[1] = ($event) => $setup.todo("2"))
+        }, [
+          vue.createElementVNode("image", { src: _imports_1$1 }),
+          vue.createTextVNode(" 风险巡检 ")
+        ])
+      ]),
       vue.createVNode($setup["TabBarVue"])
     ]);
   }
   const PagesInspectionTaskInspectionTask = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__file", "E:/开发/app/security-environment/pages/inspectionTask/inspectionTask.vue"]]);
+  const _imports_0 = "/static/yhsb.svg";
+  const _imports_1 = "/static/zadp.svg";
   const _sfc_main$7 = {
     __name: "report",
     setup(__props, { expose: __expose }) {
@@ -13051,45 +13294,33 @@ if (uni.restoreGlobal) {
     }
   };
   function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_wd_icon = resolveEasycom(vue.resolveDynamicComponent("wd-icon"), __easycom_1$3);
-    const _component_wd_cell = resolveEasycom(vue.resolveDynamicComponent("wd-cell"), __easycom_5);
-    const _component_wd_cell_group = resolveEasycom(vue.resolveDynamicComponent("wd-cell-group"), __easycom_3$1);
-    return vue.openBlock(), vue.createElementBlock("view", { style: { "margin-top": "1em" } }, [
-      vue.createVNode(_component_wd_cell_group, null, {
-        default: vue.withCtx(() => [
-          vue.createVNode(_component_wd_cell, { title: "隐患上报" }, {
-            default: vue.withCtx(() => [
-              vue.createVNode(_component_wd_icon, {
-                name: "arrow-right",
-                size: "22px",
-                style: { "line-height": "2em" },
-                center: "",
-                onClick: _cache[0] || (_cache[0] = ($event) => $setup.todo("1"))
-              })
-            ]),
-            _: 1
-            /* STABLE */
-          }),
-          vue.createCommentVNode(` <wd-cell title="风险上报">\r
-				<wd-icon name="arrow-right" size="22px" style="line-height: 2em;" center @click="todo('2')"></wd-icon>\r
-			</wd-cell> `),
-          vue.createVNode(_component_wd_cell, { title: "事故上报" }, {
-            default: vue.withCtx(() => [
-              vue.createVNode(_component_wd_icon, {
-                name: "arrow-right",
-                size: "22px",
-                style: { "line-height": "2em" },
-                center: "",
-                onClick: _cache[1] || (_cache[1] = ($event) => $setup.todo("3"))
-              })
-            ]),
-            _: 1
-            /* STABLE */
-          })
-        ]),
-        _: 1
-        /* STABLE */
+    const _component_wd_text = resolveEasycom(vue.resolveDynamicComponent("wd-text"), __easycom_0$1);
+    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-app--wrapper" }, [
+      vue.createVNode(_component_wd_text, {
+        text: "上报",
+        size: "24px",
+        style: { "margin-left": "1em", "padding-left": "1em", "border-left": "5px solid #2e7bfd" }
       }),
+      vue.createElementVNode("view", { class: "icon_view" }, [
+        vue.createElementVNode("view", {
+          class: "icon_view_item",
+          onClick: _cache[0] || (_cache[0] = ($event) => $setup.todo("1"))
+        }, [
+          vue.createElementVNode("image", { src: _imports_0 }),
+          vue.createTextVNode(" 隐患上报 ")
+        ]),
+        vue.createCommentVNode(` <view class="icon_view_item" @click="todo('2')">\r
+				<image src="@/static/wxyh.svg" />\r
+				风险上报\r
+			</view> `),
+        vue.createElementVNode("view", {
+          class: "icon_view_item",
+          onClick: _cache[1] || (_cache[1] = ($event) => $setup.todo("3"))
+        }, [
+          vue.createElementVNode("image", { src: _imports_1 }),
+          vue.createTextVNode(" 事故上报 ")
+        ])
+      ]),
       vue.createVNode($setup["TabBarVue"], { tabbar: "report" })
     ]);
   }
@@ -13104,7 +13335,7 @@ if (uni.restoreGlobal) {
           request({
             url: `/${config.mesMain}/riskcheck/execution/taskList`,
             data: {
-              area: "",
+              areaCode: code.value,
               pageNum: 1,
               pageSize: 9999
             },
@@ -13114,7 +13345,7 @@ if (uni.restoreGlobal) {
           request({
             url: `/${config.mesMain}/riskcheck/execution/taskListEd`,
             data: {
-              area: "",
+              areaCode: code.value,
               pageNum: 1,
               pageSize: 9999
             },
@@ -13126,7 +13357,7 @@ if (uni.restoreGlobal) {
             ...d1.list,
             ...d2.list
           ];
-          formatAppLog("log", "at pages/riskInspection/riskInspection.vue:75", inspectionTaskList.value);
+          formatAppLog("log", "at pages/riskInspection/riskInspection.vue:79", inspectionTaskList.value);
         }).finally(() => {
           uni.stopPullDownRefresh();
         });
@@ -13136,7 +13367,9 @@ if (uni.restoreGlobal) {
         uni.navigateTo({
           url: `/pages/riskInspectionDetails/riskInspectionDetails`,
           success(res) {
-            res.eventChannel.emit("acceptDataFromOpenerPage", { id: deteils.id });
+            res.eventChannel.emit("acceptDataFromOpenerPage", {
+              id: deteils.id
+            });
           }
         });
       }
@@ -13151,13 +13384,24 @@ if (uni.restoreGlobal) {
           });
         });
       });
+      const code = vue.ref("");
+      function scan() {
+        uni.scanCode({
+          success: function(res) {
+            formatAppLog("log", "at pages/riskInspection/riskInspection.vue:124", "条码类型：" + res.scanType);
+            formatAppLog("log", "at pages/riskInspection/riskInspection.vue:125", "条码内容：" + res.result);
+            code.value = res.result;
+            queryDate();
+          }
+        });
+      }
       onPullDownRefresh(() => {
         queryDate();
       });
       onShow(() => {
         queryDate();
       });
-      const __returned__ = { inspectionTaskList, queryDate, optionType, toDetails, onMounted: vue.onMounted, ref: vue.ref, getCurrentInstance: vue.getCurrentInstance, get onPullDownRefresh() {
+      const __returned__ = { inspectionTaskList, queryDate, optionType, toDetails, code, scan, onMounted: vue.onMounted, ref: vue.ref, getCurrentInstance: vue.getCurrentInstance, get onPullDownRefresh() {
         return onPullDownRefresh;
       }, get onShow() {
         return onShow;
@@ -13175,13 +13419,24 @@ if (uni.restoreGlobal) {
     }
   };
   function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_wd_tag = resolveEasycom(vue.resolveDynamicComponent("wd-tag"), __easycom_0$1);
-    const _component_wd_icon = resolveEasycom(vue.resolveDynamicComponent("wd-icon"), __easycom_1$3);
+    const _component_wd_input = resolveEasycom(vue.resolveDynamicComponent("wd-input"), __easycom_2$1);
+    const _component_wd_tag = resolveEasycom(vue.resolveDynamicComponent("wd-tag"), __easycom_1);
+    const _component_wd_icon = resolveEasycom(vue.resolveDynamicComponent("wd-icon"), __easycom_1$4);
     const _component_wd_cell = resolveEasycom(vue.resolveDynamicComponent("wd-cell"), __easycom_5);
     const _component_wd_cell_group = resolveEasycom(vue.resolveDynamicComponent("wd-cell-group"), __easycom_3$1);
     const _component_wd_message_box = resolveEasycom(vue.resolveDynamicComponent("wd-message-box"), __easycom_8);
     const _component_wd_toast = resolveEasycom(vue.resolveDynamicComponent("wd-toast"), __easycom_9$1);
-    return vue.openBlock(), vue.createElementBlock("view", { style: { "margin-top": "1em" } }, [
+    return vue.openBlock(), vue.createElementBlock("view", null, [
+      vue.createVNode(_component_wd_input, {
+        "align-right": "",
+        modelValue: $setup.code,
+        "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $setup.code = $event),
+        label: "区域编码",
+        "suffix-icon": "scan",
+        readonly: "",
+        onClick: _cache[1] || (_cache[1] = ($event) => $setup.scan()),
+        style: { "margin": "1em 0" }
+      }, null, 8, ["modelValue"]),
       vue.createVNode(_component_wd_cell_group, null, {
         default: vue.withCtx(() => [
           (vue.openBlock(true), vue.createElementBlock(
@@ -13298,7 +13553,7 @@ if (uni.restoreGlobal) {
                 params.photoList.push(item.url);
               }
             });
-            formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:99", 999);
+            formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:98", 999);
             request({
               url,
               data: params,
@@ -13316,8 +13571,8 @@ if (uni.restoreGlobal) {
             });
           }
         }).catch((error) => {
-          formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:118", 999);
-          formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:119", error, "error");
+          formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:117", 999);
+          formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:118", error, "error");
         });
       }
       function openReported() {
@@ -13344,8 +13599,8 @@ if (uni.restoreGlobal) {
         if (formstate.value.state !== 1) {
           uni.scanCode({
             success: function(res) {
-              formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:156", "条码类型：" + res.scanType);
-              formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:157", "条码内容：" + res.result);
+              formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:155", "条码类型：" + res.scanType);
+              formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:156", "条码内容：" + res.result);
               formstate.value.sign = res.result;
             }
           });
@@ -13384,7 +13639,7 @@ if (uni.restoreGlobal) {
         const instance = vue.getCurrentInstance().proxy;
         const eventChannel = instance.getOpenerEventChannel();
         eventChannel.on("acceptDataFromOpenerPage", function(data) {
-          formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:206", data, data.id);
+          formatAppLog("log", "at pages/riskInspectionDetails/riskInspectionDetails.vue:205", data, data.id);
           taskId.value = data.id;
           queryDetails();
         });
@@ -13472,18 +13727,11 @@ if (uni.restoreGlobal) {
               label: "区域",
               readonly: ""
             }, null, 8, ["modelValue"]),
-            vue.createVNode(_component_wd_input, {
-              "align-right": "",
-              modelValue: $setup.formstate.content,
-              "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => $setup.formstate.content = $event),
-              label: "内容",
-              readonly: ""
-            }, null, 8, ["modelValue"]),
             vue.createVNode(_component_wd_select_picker, {
               "align-right": "",
               label: "巡检结果",
               modelValue: $setup.formstate.result,
-              "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => $setup.formstate.result = $event),
+              "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => $setup.formstate.result = $event),
               columns: $setup.resultList,
               "show-confirm": false,
               type: "radio",
@@ -13498,7 +13746,7 @@ if (uni.restoreGlobal) {
               default: vue.withCtx(() => [
                 vue.createVNode(_component_wd_textarea, {
                   modelValue: $setup.formstate.remark,
-                  "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => $setup.formstate.remark = $event),
+                  "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => $setup.formstate.remark = $event),
                   disabled: $setup.formstate.state === 1
                 }, null, 8, ["modelValue", "disabled"])
               ]),
@@ -13508,11 +13756,11 @@ if (uni.restoreGlobal) {
             vue.createVNode(_component_wd_input, {
               "align-right": "",
               modelValue: $setup.formstate.sign,
-              "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => $setup.formstate.sign = $event),
+              "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => $setup.formstate.sign = $event),
               label: "区域编码",
               "suffix-icon": "scan",
               readonly: "",
-              onClick: _cache[9] || (_cache[9] = ($event) => $setup.scan()),
+              onClick: _cache[8] || (_cache[8] = ($event) => $setup.scan()),
               prop: "sign",
               rules: [{ required: true, message: "请选扫描区域编码" }]
             }, null, 8, ["modelValue"]),
@@ -13523,7 +13771,7 @@ if (uni.restoreGlobal) {
               default: vue.withCtx(() => [
                 vue.createVNode(_component_wd_upload, {
                   "file-list": $setup.fileList,
-                  "onUpdate:fileList": _cache[10] || (_cache[10] = ($event) => $setup.fileList = $event),
+                  "onUpdate:fileList": _cache[9] || (_cache[9] = ($event) => $setup.fileList = $event),
                   multiple: "",
                   action: $setup.action,
                   disabled: $setup.formstate.state === 1
@@ -13770,7 +14018,7 @@ if (uni.restoreGlobal) {
   };
   function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_wd_picker = resolveEasycom(vue.resolveDynamicComponent("wd-picker"), __easycom_0$3);
-    const _component_wd_datetime_picker = resolveEasycom(vue.resolveDynamicComponent("wd-datetime-picker"), __easycom_1$2);
+    const _component_wd_datetime_picker = resolveEasycom(vue.resolveDynamicComponent("wd-datetime-picker"), __easycom_1$3);
     const _component_wd_input = resolveEasycom(vue.resolveDynamicComponent("wd-input"), __easycom_2$1);
     const _component_wd_textarea = resolveEasycom(vue.resolveDynamicComponent("wd-textarea"), __easycom_2);
     const _component_wd_upload = resolveEasycom(vue.resolveDynamicComponent("wd-upload"), __easycom_4);
@@ -13779,7 +14027,7 @@ if (uni.restoreGlobal) {
     const _component_wd_form = resolveEasycom(vue.resolveDynamicComponent("wd-form"), __easycom_7);
     const _component_wd_message_box = resolveEasycom(vue.resolveDynamicComponent("wd-message-box"), __easycom_8);
     const _component_wd_toast = resolveEasycom(vue.resolveDynamicComponent("wd-toast"), __easycom_9$1);
-    return vue.openBlock(), vue.createElementBlock("view", null, [
+    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-app--wrapper" }, [
       vue.createCommentVNode(" form表单 "),
       vue.createElementVNode("view", null, [
         vue.createVNode(_component_wd_form, {
@@ -13844,7 +14092,7 @@ if (uni.restoreGlobal) {
               "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => $setup.formstate.hazardSource = $event),
               label: "隐患来源",
               prop: "hazardSource",
-              rules: [{ required: true, message: "请输入隐患来源" }]
+              rules: [{ required: false, message: "请输入隐患来源" }]
             }, null, 8, ["modelValue"]),
             vue.createVNode(_component_wd_picker, {
               "align-right": "",
@@ -13853,7 +14101,7 @@ if (uni.restoreGlobal) {
               modelValue: $setup.formstate.level,
               "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => $setup.formstate.level = $event),
               prop: "level",
-              rules: [{ required: true, message: "请选择隐患等级" }]
+              rules: [{ required: false, message: "请选择隐患等级" }]
             }, null, 8, ["columns", "modelValue"]),
             vue.createVNode(_component_wd_cell, {
               title: "现场图片上传",
@@ -14062,11 +14310,11 @@ if (uni.restoreGlobal) {
   };
   function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_wd_img = resolveEasycom(vue.resolveDynamicComponent("wd-img"), __easycom_0);
-    const _component_wd_icon = resolveEasycom(vue.resolveDynamicComponent("wd-icon"), __easycom_1$3);
+    const _component_wd_icon = resolveEasycom(vue.resolveDynamicComponent("wd-icon"), __easycom_1$4);
     const _component_wd_cell = resolveEasycom(vue.resolveDynamicComponent("wd-cell"), __easycom_5);
     const _component_wd_cell_group = resolveEasycom(vue.resolveDynamicComponent("wd-cell-group"), __easycom_3$1);
     const _component_wd_message_box = resolveEasycom(vue.resolveDynamicComponent("wd-message-box"), __easycom_8);
-    return vue.openBlock(), vue.createElementBlock("view", null, [
+    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-app--wrapper" }, [
       vue.createElementVNode("view", null, [
         vue.createElementVNode("view", { style: { "display": "flex", "align-items": "center", "flex-direction": "column" } }, [
           vue.createVNode(_component_wd_img, {
@@ -14383,7 +14631,7 @@ if (uni.restoreGlobal) {
   };
   function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_wd_picker = resolveEasycom(vue.resolveDynamicComponent("wd-picker"), __easycom_0$3);
-    const _component_wd_datetime_picker = resolveEasycom(vue.resolveDynamicComponent("wd-datetime-picker"), __easycom_1$2);
+    const _component_wd_datetime_picker = resolveEasycom(vue.resolveDynamicComponent("wd-datetime-picker"), __easycom_1$3);
     const _component_wd_textarea = resolveEasycom(vue.resolveDynamicComponent("wd-textarea"), __easycom_2);
     const _component_wd_select_picker = resolveEasycom(vue.resolveDynamicComponent("wd-select-picker"), __easycom_3);
     const _component_wd_upload = resolveEasycom(vue.resolveDynamicComponent("wd-upload"), __easycom_4);
@@ -14392,7 +14640,7 @@ if (uni.restoreGlobal) {
     const _component_wd_form = resolveEasycom(vue.resolveDynamicComponent("wd-form"), __easycom_7);
     const _component_wd_message_box = resolveEasycom(vue.resolveDynamicComponent("wd-message-box"), __easycom_8);
     const _component_wd_toast = resolveEasycom(vue.resolveDynamicComponent("wd-toast"), __easycom_9$1);
-    return vue.openBlock(), vue.createElementBlock("view", null, [
+    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-app--wrapper" }, [
       vue.createCommentVNode(" form表单 "),
       vue.createElementVNode("view", null, [
         vue.createVNode(_component_wd_form, {
@@ -14551,13 +14799,14 @@ if (uni.restoreGlobal) {
   __definePage("pages/accidentReport/accidentReport", PagesAccidentReportAccidentReport);
   const _sfc_main = {
     onLaunch: function() {
-      formatAppLog("log", "at App.vue:4", "App Launch");
+      plus.navigator.setFullscreen(true);
+      formatAppLog("log", "at App.vue:6", "App Launch");
     },
     onShow: function() {
-      formatAppLog("log", "at App.vue:7", "App Show");
+      formatAppLog("log", "at App.vue:9", "App Show");
     },
     onHide: function() {
-      formatAppLog("log", "at App.vue:10", "App Hide");
+      formatAppLog("log", "at App.vue:12", "App Hide");
     }
   };
   const App = /* @__PURE__ */ _export_sfc(_sfc_main, [["__file", "E:/开发/app/security-environment/App.vue"]]);

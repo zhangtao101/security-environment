@@ -5,10 +5,10 @@
     "iPad"
   ],
   "id": "__UNI__F0AD74D",
-  "name": "安环上报",
+  "name": "安环系统",
   "version": {
-    "name": "1.0.4",
-    "code": 104
+    "name": "1.0.7",
+    "code": 107
   },
   "description": "test",
   "developer": {
@@ -39,6 +39,17 @@
       "render": "always",
       "id": "1",
       "kernel": "WKWebview"
+    },
+    "statusbar": {
+      "immersed": "supportedDevice",
+      "style": "dark",
+      "background": "#2e7bfd"
+    },
+    "safearea": {
+      "background": "#00000000",
+      "bottom": {
+        "offset": "auto"
+      }
     },
     "usingComponents": true,
     "nvueStyleCompiler": "uni-app",
@@ -74,11 +85,6 @@
         }
       }
     },
-    "statusbar": {
-      "immersed": "supportedDevice",
-      "style": "dark",
-      "background": "#F8F8F8"
-    },
     "uniStatistics": {
       "enable": false
     },
@@ -86,7 +92,7 @@
     "uni-app": {
       "control": "uni-v3",
       "vueVersion": "3",
-      "compilerVersion": "4.76",
+      "compilerVersion": "4.85",
       "nvueCompiler": "uni-app",
       "renderer": "auto",
       "nvue": {

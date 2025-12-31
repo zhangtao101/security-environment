@@ -187,6 +187,482 @@
   * @param $z-index z-index属性值，不得大于外部包裹器
   * @param $box-shadow 阴影
 */
+.wd-text.is-bold[data-v-24041fa1] {
+  font-weight: bold;
+}
+.wd-text.is-lines-1[data-v-24041fa1] {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.wd-text.is-lines-2[data-v-24041fa1] {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.wd-text.is-lines-3[data-v-24041fa1] {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.wd-text.is-lines-4[data-v-24041fa1] {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+.wd-text.is-lines-5[data-v-24041fa1] {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+.wd-text.is-default[data-v-24041fa1] {
+  color: var(--wot-text-info-color, var(--wot-color-info, #909399));
+}
+.wd-text.is-primary[data-v-24041fa1] {
+  color: var(--wot-text-primary-color, var(--wot-color-theme, #4d80f0));
+}
+.wd-text.is-error[data-v-24041fa1] {
+  color: var(--wot-text-error-color, var(--wot-color-danger, #fa4350));
+}
+.wd-text.is-warning[data-v-24041fa1] {
+  color: var(--wot-text-warning-color, var(--wot-color-warning, #f0883a));
+}
+.wd-text.is-success[data-v-24041fa1] {
+  color: var(--wot-text-success-color, var(--wot-color-success, #34d19d));
+}
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/**
+ * 混合宏
+ */
+/**
+ * SCSS 配置项：命名空间以及BEM
+ */
+/**
+ * 辅助函数
+ */
+/**
+ * SCSS 配置项：命名空间以及BEM
+ */
+/* 转换成字符串 */
+/* 判断是否存在 Modifier */
+/* 判断是否存在伪类 */
+/**
+ * 主题色切换
+ * @params $theme-color 主题色
+ * @params $type 变暗’dark‘ 变亮 'light'
+ * @params $mix-color 自己设置的混色
+ */
+/**
+ * 颜色结果切换， 如果开启线性渐变色 使用渐变色，如果没有开启，那么使用主题色
+ * @params $open-linear 是否开启线性渐变色
+ * @params $deg 渐变色角度
+ * @params $theme-color 当前配色
+ * @params [Array] $set 主题色明暗设置，与 $color-list 数量对应
+ * @params [Array] $color-list 渐变色顺序， $color-list 和 $per-list 数量相同
+ * @params [Array] $per-list 渐变色比例
+ */
+/**
+  * BEM，定义块（b)
+  */
+/* 定义元素（e），对于伪类，会自动将 e 嵌套在 伪类 底下 */
+/* 此方法用于生成穿透样式 */
+/* 定义元素（e），对于伪类，会自动将 e 嵌套在 伪类 底下 */
+/* 定义状态（m） */
+/* 定义状态（m） */
+/* 对于需要需要嵌套在 m 底下的 e，调用这个混合宏，一般在切换整个组件的状态，如切换颜色的时候 */
+/* 状态，生成 is-$state 类名 */
+/**
+  * 常用混合宏
+  */
+/* 单行超出隐藏 */
+/* 多行超出隐藏 */
+/* 清除浮动 */
+/* 0.5px 边框 指定方向*/
+/* 0.5px 边框 环绕 */
+/**
+  * 三角形实现尖角样式，适用于背景透明情况
+  * @param $size 三角形高，底边为 $size * 2
+  * @param $bg 三角形背景颜色
+  */
+/**
+  * 正方形实现尖角样式，适用于背景不透明情况
+  * @param $size 正方形边长
+  * @param $bg 正方形背景颜色
+  * @param $z-index z-index属性值，不得大于外部包裹器
+  * @param $box-shadow 阴影
+*/
+/**
+ * 辅助函数
+ */
+/**
+ * SCSS 配置项：命名空间以及BEM
+ */
+/* 转换成字符串 */
+/* 判断是否存在 Modifier */
+/* 判断是否存在伪类 */
+/**
+ * 主题色切换
+ * @params $theme-color 主题色
+ * @params $type 变暗’dark‘ 变亮 'light'
+ * @params $mix-color 自己设置的混色
+ */
+/**
+ * 颜色结果切换， 如果开启线性渐变色 使用渐变色，如果没有开启，那么使用主题色
+ * @params $open-linear 是否开启线性渐变色
+ * @params $deg 渐变色角度
+ * @params $theme-color 当前配色
+ * @params [Array] $set 主题色明暗设置，与 $color-list 数量对应
+ * @params [Array] $color-list 渐变色顺序， $color-list 和 $per-list 数量相同
+ * @params [Array] $per-list 渐变色比例
+ */
+/**
+ * UI规范基础变量
+ */
+/*----------------------------------------- Theme color. start ----------------------------------------*/
+/* 主题颜色 */
+/* 辅助色 */
+/* 文字颜色（默认浅色背景下 */
+/* 暗黑模式 */
+/* 图形颜色 */
+/*----------------------------------------- Theme color. end -------------------------------------------*/
+/*-------------------------------- Theme color application size.  start --------------------------------*/
+/* 文字字号 */
+/* 文字字重 */
+/* 尺寸 */
+/*-------------------------------- Theme color application size.  end --------------------------------*/
+/* component var */
+/* action-sheet */
+/* badge */
+/* button */
+/* cell */
+/* calendar */
+/* checkbox */
+/* collapse */
+/* divider */
+/* drop-menu */
+/* input-number */
+/* input */
+/* textarea */
+/* loadmore */
+/* message-box */
+/* notice-bar */
+/* pagination */
+/* picker */
+/* col-picker */
+/* overlay */
+/* popup */
+/* progress */
+/* radio */
+/* search */
+/* slider */
+/* sort-button */
+/* steps */
+/* switch */
+/* tabs */
+/* tag */
+/* toast */
+/* loading */
+/* tooltip */
+/* popover */
+/* grid-item */
+/* statustip */
+/* card */
+/* upload */
+/* curtain */
+/* notify */
+/* skeleton */
+/* circle */
+/* swiper */
+/* swiper-nav */
+/* segmented */
+/* tabbar */
+/* tabbar-item */
+/* navbar */
+/* navbar-capsule */
+/* table */
+/* sidebar */
+/* sidebar-item */
+/* fab */
+/* count-down */
+/* keyboard */
+/* number-keyboard */
+/* passwod-input */
+/* form-item */
+/* backtop */
+/* index-bar */
+/* text */
+/* video-preview */
+/* img-cropper */
+/* floating-panel */
+/* signature */
+.wot-theme-dark .wd-badge__content[data-v-6ea9b0eb] {
+  border-color: var(--wot-dark-background2, #1b1b1b);
+}
+.wd-badge[data-v-6ea9b0eb] {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+}
+.wd-badge__content[data-v-6ea9b0eb] {
+  display: inline-block;
+  box-sizing: content-box;
+  height: var(--wot-badge-height, 16px);
+  line-height: var(--wot-badge-height, 16px);
+  padding: var(--wot-badge-padding, 0 5px);
+  background-color: var(--wot-badge-bg, var(--wot-color-danger, #fa4350));
+  border-radius: calc(var(--wot-badge-height, 16px) / 2 + 2px);
+  color: var(--wot-badge-color, #fff);
+  font-size: var(--wot-badge-fs, 12px);
+  text-align: center;
+  white-space: nowrap;
+  border: var(--wot-badge-border, 2px solid var(--wot-badge-color, #fff));
+  font-weight: 500;
+}
+.wd-badge__content.is-fixed[data-v-6ea9b0eb] {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform: translateY(-50%) translateX(50%);
+}
+.wd-badge__content.is-dot[data-v-6ea9b0eb] {
+  height: var(--wot-badge-dot-size, 6px);
+  width: var(--wot-badge-dot-size, 6px);
+  padding: 0;
+  border-radius: 50%;
+}
+.wd-badge__content--primary[data-v-6ea9b0eb] {
+  background-color: var(--wot-badge-primary, var(--wot-color-theme, #4d80f0));
+}
+.wd-badge__content--success[data-v-6ea9b0eb] {
+  background-color: var(--wot-badge-success, var(--wot-color-success, #34d19d));
+}
+.wd-badge__content--warning[data-v-6ea9b0eb] {
+  background-color: var(--wot-badge-warning, var(--wot-color-warning, #f0883a));
+}
+.wd-badge__content--info[data-v-6ea9b0eb] {
+  background-color: var(--wot-badge-info, var(--wot-color-info, #909399));
+}
+.wd-badge__content--danger[data-v-6ea9b0eb] {
+  background-color: var(--wot-badge-danger, var(--wot-color-danger, #fa4350));
+}
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/**
+ * 辅助函数
+ */
+/**
+ * SCSS 配置项：命名空间以及BEM
+ */
+/* 转换成字符串 */
+/* 判断是否存在 Modifier */
+/* 判断是否存在伪类 */
+/**
+ * 主题色切换
+ * @params $theme-color 主题色
+ * @params $type 变暗’dark‘ 变亮 'light'
+ * @params $mix-color 自己设置的混色
+ */
+/**
+ * 颜色结果切换， 如果开启线性渐变色 使用渐变色，如果没有开启，那么使用主题色
+ * @params $open-linear 是否开启线性渐变色
+ * @params $deg 渐变色角度
+ * @params $theme-color 当前配色
+ * @params [Array] $set 主题色明暗设置，与 $color-list 数量对应
+ * @params [Array] $color-list 渐变色顺序， $color-list 和 $per-list 数量相同
+ * @params [Array] $per-list 渐变色比例
+ */
+/**
+ * UI规范基础变量
+ */
+/*----------------------------------------- Theme color. start ----------------------------------------*/
+/* 主题颜色 */
+/* 辅助色 */
+/* 文字颜色（默认浅色背景下 */
+/* 暗黑模式 */
+/* 图形颜色 */
+/*----------------------------------------- Theme color. end -------------------------------------------*/
+/*-------------------------------- Theme color application size.  start --------------------------------*/
+/* 文字字号 */
+/* 文字字重 */
+/* 尺寸 */
+/*-------------------------------- Theme color application size.  end --------------------------------*/
+/* component var */
+/* action-sheet */
+/* badge */
+/* button */
+/* cell */
+/* calendar */
+/* checkbox */
+/* collapse */
+/* divider */
+/* drop-menu */
+/* input-number */
+/* input */
+/* textarea */
+/* loadmore */
+/* message-box */
+/* notice-bar */
+/* pagination */
+/* picker */
+/* col-picker */
+/* overlay */
+/* popup */
+/* progress */
+/* radio */
+/* search */
+/* slider */
+/* sort-button */
+/* steps */
+/* switch */
+/* tabs */
+/* tag */
+/* toast */
+/* loading */
+/* tooltip */
+/* popover */
+/* grid-item */
+/* statustip */
+/* card */
+/* upload */
+/* curtain */
+/* notify */
+/* skeleton */
+/* circle */
+/* swiper */
+/* swiper-nav */
+/* segmented */
+/* tabbar */
+/* tabbar-item */
+/* navbar */
+/* navbar-capsule */
+/* table */
+/* sidebar */
+/* sidebar-item */
+/* fab */
+/* count-down */
+/* keyboard */
+/* number-keyboard */
+/* passwod-input */
+/* form-item */
+/* backtop */
+/* index-bar */
+/* text */
+/* video-preview */
+/* img-cropper */
+/* floating-panel */
+/* signature */
+/**
+ * 混合宏
+ */
+/**
+ * SCSS 配置项：命名空间以及BEM
+ */
+/**
+ * 辅助函数
+ */
+/**
+ * SCSS 配置项：命名空间以及BEM
+ */
+/* 转换成字符串 */
+/* 判断是否存在 Modifier */
+/* 判断是否存在伪类 */
+/**
+ * 主题色切换
+ * @params $theme-color 主题色
+ * @params $type 变暗’dark‘ 变亮 'light'
+ * @params $mix-color 自己设置的混色
+ */
+/**
+ * 颜色结果切换， 如果开启线性渐变色 使用渐变色，如果没有开启，那么使用主题色
+ * @params $open-linear 是否开启线性渐变色
+ * @params $deg 渐变色角度
+ * @params $theme-color 当前配色
+ * @params [Array] $set 主题色明暗设置，与 $color-list 数量对应
+ * @params [Array] $color-list 渐变色顺序， $color-list 和 $per-list 数量相同
+ * @params [Array] $per-list 渐变色比例
+ */
+/**
+  * BEM，定义块（b)
+  */
+/* 定义元素（e），对于伪类，会自动将 e 嵌套在 伪类 底下 */
+/* 此方法用于生成穿透样式 */
+/* 定义元素（e），对于伪类，会自动将 e 嵌套在 伪类 底下 */
+/* 定义状态（m） */
+/* 定义状态（m） */
+/* 对于需要需要嵌套在 m 底下的 e，调用这个混合宏，一般在切换整个组件的状态，如切换颜色的时候 */
+/* 状态，生成 is-$state 类名 */
+/**
+  * 常用混合宏
+  */
+/* 单行超出隐藏 */
+/* 多行超出隐藏 */
+/* 清除浮动 */
+/* 0.5px 边框 指定方向*/
+/* 0.5px 边框 环绕 */
+/**
+  * 三角形实现尖角样式，适用于背景透明情况
+  * @param $size 三角形高，底边为 $size * 2
+  * @param $bg 三角形背景颜色
+  */
+/**
+  * 正方形实现尖角样式，适用于背景不透明情况
+  * @param $size 正方形边长
+  * @param $bg 正方形背景颜色
+  * @param $z-index z-index属性值，不得大于外部包裹器
+  * @param $box-shadow 阴影
+*/
 @font-face {
   font-family: "wd-icons";
   src: url("https://at.alicdn.com/t/c/font_4245058_s5cpwl25n7o.woff2?t=1696817709651") format("woff2"), url("https://at.alicdn.com/t/c/font_4245058_s5cpwl25n7o.woff?t=1696817709651") format("woff"), url("https://at.alicdn.com/t/c/font_4245058_s5cpwl25n7o.ttf?t=1696817709651") format("truetype");
@@ -1296,867 +1772,6 @@
   * @param $z-index z-index属性值，不得大于外部包裹器
   * @param $box-shadow 阴影
 */
-.wot-theme-dark .wd-cell[data-v-f1c5bbe2] {
-  background-color: var(--wot-dark-background2, #1b1b1b);
-  color: var(--wot-dark-color, var(--wot-color-white, white));
-}
-.wot-theme-dark .wd-cell__value[data-v-f1c5bbe2] {
-  color: var(--wot-dark-color, var(--wot-color-white, white));
-}
-.wot-theme-dark .wd-cell__label[data-v-f1c5bbe2] {
-  color: var(--wot-dark-color3, rgba(232, 230, 227, 0.8));
-}
-.wot-theme-dark .wd-cell.is-hover[data-v-f1c5bbe2] {
-  background-color: var(--wot-dark-background4, #323233);
-}
-.wot-theme-dark .wd-cell.is-border .wd-cell__wrapper[data-v-f1c5bbe2] {
-  position: relative;
-}
-.wot-theme-dark .wd-cell.is-border .wd-cell__wrapper[data-v-f1c5bbe2]::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 1px;
-  left: 0;
-  top: 0;
-  transform: scaleY(0.5);
-  background: var(--wot-dark-border-color, #3a3a3c);
-}
-.wot-theme-dark .wd-cell[data-v-f1c5bbe2] .wd-cell__arrow-right {
-  color: var(--wot-dark-color, var(--wot-color-white, white));
-}
-.wd-cell[data-v-f1c5bbe2] {
-  position: relative;
-  padding-left: var(--wot-cell-padding, var(--wot-size-side-padding, 15px));
-  background-color: var(--wot-color-white, white);
-  text-decoration: none;
-  color: var(--wot-cell-title-color, rgba(0, 0, 0, 0.85));
-  line-height: var(--wot-cell-line-height, 24px);
-  -webkit-tap-highlight-color: transparent;
-  box-sizing: border-box;
-  width: 100%;
-  overflow: hidden;
-}
-.wd-cell.is-border .wd-cell__wrapper[data-v-f1c5bbe2] {
-  position: relative;
-}
-.wd-cell.is-border .wd-cell__wrapper[data-v-f1c5bbe2]::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 1px;
-  left: 0;
-  top: 0;
-  transform: scaleY(0.5);
-  background: var(--wot-color-border-light, #e8e8e8);
-}
-.wd-cell__wrapper[data-v-f1c5bbe2] {
-  position: relative;
-  display: flex;
-  padding: var(--wot-cell-wrapper-padding, 10px) var(--wot-cell-padding, var(--wot-size-side-padding, 15px)) var(--wot-cell-wrapper-padding, 10px) 0;
-  justify-content: space-between;
-  align-items: flex-start;
-  overflow: hidden;
-}
-.wd-cell__wrapper.is-vertical[data-v-f1c5bbe2] {
-  display: block;
-}
-.wd-cell__wrapper.is-vertical .wd-cell__right[data-v-f1c5bbe2] {
-  margin-top: var(--wot-cell-vertical-top, 16px);
-}
-.wd-cell__wrapper.is-vertical .wd-cell__value[data-v-f1c5bbe2] {
-  text-align: left;
-}
-.wd-cell__wrapper.is-vertical .wd-cell__left[data-v-f1c5bbe2] {
-  margin-right: 0;
-}
-.wd-cell__wrapper.is-label[data-v-f1c5bbe2] {
-  padding: var(--wot-cell-wrapper-padding-with-label, 16px) var(--wot-cell-padding, var(--wot-size-side-padding, 15px)) var(--wot-cell-wrapper-padding-with-label, 16px) 0;
-}
-.wd-cell__left[data-v-f1c5bbe2] {
-  position: relative;
-  flex: 1;
-  display: flex;
-  text-align: left;
-  font-size: var(--wot-cell-title-fs, 14px);
-  box-sizing: border-box;
-  margin-right: var(--wot-cell-padding, var(--wot-size-side-padding, 15px));
-}
-.wd-cell__right[data-v-f1c5bbe2] {
-  position: relative;
-  flex: 1;
-  min-width: 0;
-}
-.wd-cell__title[data-v-f1c5bbe2] {
-  font-size: var(--wot-cell-title-fs, 14px);
-}
-.wd-cell__required[data-v-f1c5bbe2] {
-  font-size: var(--wot-cell-required-size, 18px);
-  color: var(--wot-cell-required-color, var(--wot-color-danger, #fa4350));
-  margin-left: var(--wot-cell-required-margin, 4px);
-}
-.wd-cell__required--left[data-v-f1c5bbe2] {
-  margin-left: 0;
-  margin-right: var(--wot-cell-required-margin, 4px);
-}
-.wd-cell__label[data-v-f1c5bbe2] {
-  margin-top: 2px;
-  font-size: var(--wot-cell-label-fs, 12px);
-  color: var(--wot-cell-label-color, rgba(0, 0, 0, 0.45));
-}
-[data-v-f1c5bbe2]  .wd-cell__icon {
-  display: block;
-  position: relative;
-  margin-right: var(--wot-cell-icon-right, 4px);
-  font-size: var(--wot-cell-icon-size, 16px);
-  height: var(--wot-cell-line-height, 24px);
-  line-height: var(--wot-cell-line-height, 24px);
-}
-.wd-cell__body[data-v-f1c5bbe2] {
-  display: flex;
-  min-width: 0;
-}
-.wd-cell__value[data-v-f1c5bbe2] {
-  position: relative;
-  flex: 1;
-  font-size: var(--wot-cell-value-fs, 14px);
-  color: var(--wot-cell-value-color, rgba(0, 0, 0, 0.85));
-  vertical-align: middle;
-}
-.wd-cell__value--left[data-v-f1c5bbe2] {
-  text-align: left;
-}
-.wd-cell__value--right[data-v-f1c5bbe2] {
-  text-align: right;
-}
-.wd-cell__value--ellipsis[data-v-f1c5bbe2] {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  min-width: 0;
-}
-[data-v-f1c5bbe2]  .wd-cell__arrow-right {
-  display: block;
-  margin-left: 8px;
-  width: var(--wot-cell-arrow-size, 18px);
-  font-size: var(--wot-cell-arrow-size, 18px);
-  color: var(--wot-cell-arrow-color, rgba(0, 0, 0, 0.25));
-  height: var(--wot-cell-line-height, 24px);
-  line-height: var(--wot-cell-line-height, 24px);
-}
-.wd-cell__error-message[data-v-f1c5bbe2] {
-  color: var(--wot-form-item-error-message-color, var(--wot-color-danger, #fa4350));
-  font-size: var(--wot-form-item-error-message-font-size, var(--wot-fs-secondary, 12px));
-  line-height: var(--wot-form-item-error-message-line-height, 24px);
-  text-align: left;
-  vertical-align: middle;
-}
-.wd-cell.is-link[data-v-f1c5bbe2] {
-  -webkit-tap-highlight-color: var(--wot-cell-tap-bg, rgba(0, 0, 0, 0.06));
-}
-.wd-cell.is-hover[data-v-f1c5bbe2] {
-  background-color: var(--wot-cell-tap-bg, rgba(0, 0, 0, 0.06));
-}
-.wd-cell.is-large .wd-cell__title[data-v-f1c5bbe2] {
-  font-size: var(--wot-cell-title-fs-large, 16px);
-}
-.wd-cell.is-large .wd-cell__wrapper[data-v-f1c5bbe2] {
-  padding-top: var(--wot-cell-wrapper-padding-large, 12px);
-  padding-bottom: var(--wot-cell-wrapper-padding-large, 12px);
-}
-.wd-cell.is-large .wd-cell__label[data-v-f1c5bbe2] {
-  font-size: var(--wot-cell-label-fs-large, 14px);
-}
-.wd-cell.is-large .wd-cell__value[data-v-f1c5bbe2] {
-  font-size: var(--wot-cell-value-fs-large, 16px);
-}
-.wd-cell.is-large[data-v-f1c5bbe2] .wd-cell__icon {
-  font-size: var(--wot-cell-icon-size-large, 18px);
-}
-.wd-cell.is-center .wd-cell__wrapper[data-v-f1c5bbe2] {
-  align-items: center;
-}
-/**
- * 这里是uni-app内置的常用样式变量
- *
- * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
- * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
- *
- */
-/**
- * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
- *
- * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
- */
-/* 颜色变量 */
-/* 行为相关颜色 */
-/* 文字基本颜色 */
-/* 背景颜色 */
-/* 边框颜色 */
-/* 尺寸变量 */
-/* 文字尺寸 */
-/* 图片尺寸 */
-/* Border Radius */
-/* 水平间距 */
-/* 垂直间距 */
-/* 透明度 */
-/* 文章场景相关 */
-/**
- * 辅助函数
- */
-/**
- * SCSS 配置项：命名空间以及BEM
- */
-/* 转换成字符串 */
-/* 判断是否存在 Modifier */
-/* 判断是否存在伪类 */
-/**
- * 主题色切换
- * @params $theme-color 主题色
- * @params $type 变暗’dark‘ 变亮 'light'
- * @params $mix-color 自己设置的混色
- */
-/**
- * 颜色结果切换， 如果开启线性渐变色 使用渐变色，如果没有开启，那么使用主题色
- * @params $open-linear 是否开启线性渐变色
- * @params $deg 渐变色角度
- * @params $theme-color 当前配色
- * @params [Array] $set 主题色明暗设置，与 $color-list 数量对应
- * @params [Array] $color-list 渐变色顺序， $color-list 和 $per-list 数量相同
- * @params [Array] $per-list 渐变色比例
- */
-/**
- * UI规范基础变量
- */
-/*----------------------------------------- Theme color. start ----------------------------------------*/
-/* 主题颜色 */
-/* 辅助色 */
-/* 文字颜色（默认浅色背景下 */
-/* 暗黑模式 */
-/* 图形颜色 */
-/*----------------------------------------- Theme color. end -------------------------------------------*/
-/*-------------------------------- Theme color application size.  start --------------------------------*/
-/* 文字字号 */
-/* 文字字重 */
-/* 尺寸 */
-/*-------------------------------- Theme color application size.  end --------------------------------*/
-/* component var */
-/* action-sheet */
-/* badge */
-/* button */
-/* cell */
-/* calendar */
-/* checkbox */
-/* collapse */
-/* divider */
-/* drop-menu */
-/* input-number */
-/* input */
-/* textarea */
-/* loadmore */
-/* message-box */
-/* notice-bar */
-/* pagination */
-/* picker */
-/* col-picker */
-/* overlay */
-/* popup */
-/* progress */
-/* radio */
-/* search */
-/* slider */
-/* sort-button */
-/* steps */
-/* switch */
-/* tabs */
-/* tag */
-/* toast */
-/* loading */
-/* tooltip */
-/* popover */
-/* grid-item */
-/* statustip */
-/* card */
-/* upload */
-/* curtain */
-/* notify */
-/* skeleton */
-/* circle */
-/* swiper */
-/* swiper-nav */
-/* segmented */
-/* tabbar */
-/* tabbar-item */
-/* navbar */
-/* navbar-capsule */
-/* table */
-/* sidebar */
-/* sidebar-item */
-/* fab */
-/* count-down */
-/* keyboard */
-/* number-keyboard */
-/* passwod-input */
-/* form-item */
-/* backtop */
-/* index-bar */
-/* text */
-/* video-preview */
-/* img-cropper */
-/* floating-panel */
-/* signature */
-/**
- * 混合宏
- */
-/**
- * SCSS 配置项：命名空间以及BEM
- */
-/**
- * 辅助函数
- */
-/**
- * SCSS 配置项：命名空间以及BEM
- */
-/* 转换成字符串 */
-/* 判断是否存在 Modifier */
-/* 判断是否存在伪类 */
-/**
- * 主题色切换
- * @params $theme-color 主题色
- * @params $type 变暗’dark‘ 变亮 'light'
- * @params $mix-color 自己设置的混色
- */
-/**
- * 颜色结果切换， 如果开启线性渐变色 使用渐变色，如果没有开启，那么使用主题色
- * @params $open-linear 是否开启线性渐变色
- * @params $deg 渐变色角度
- * @params $theme-color 当前配色
- * @params [Array] $set 主题色明暗设置，与 $color-list 数量对应
- * @params [Array] $color-list 渐变色顺序， $color-list 和 $per-list 数量相同
- * @params [Array] $per-list 渐变色比例
- */
-/**
-  * BEM，定义块（b)
-  */
-/* 定义元素（e），对于伪类，会自动将 e 嵌套在 伪类 底下 */
-/* 此方法用于生成穿透样式 */
-/* 定义元素（e），对于伪类，会自动将 e 嵌套在 伪类 底下 */
-/* 定义状态（m） */
-/* 定义状态（m） */
-/* 对于需要需要嵌套在 m 底下的 e，调用这个混合宏，一般在切换整个组件的状态，如切换颜色的时候 */
-/* 状态，生成 is-$state 类名 */
-/**
-  * 常用混合宏
-  */
-/* 单行超出隐藏 */
-/* 多行超出隐藏 */
-/* 清除浮动 */
-/* 0.5px 边框 指定方向*/
-/* 0.5px 边框 环绕 */
-/**
-  * 三角形实现尖角样式，适用于背景透明情况
-  * @param $size 三角形高，底边为 $size * 2
-  * @param $bg 三角形背景颜色
-  */
-/**
-  * 正方形实现尖角样式，适用于背景不透明情况
-  * @param $size 正方形边长
-  * @param $bg 正方形背景颜色
-  * @param $z-index z-index属性值，不得大于外部包裹器
-  * @param $box-shadow 阴影
-*/
-.wot-theme-dark .wd-cell-group[data-v-55e5786b] {
-  background-color: var(--wot-dark-background2, #1b1b1b);
-}
-.wot-theme-dark .wd-cell-group.is-border .wd-cell-group__title[data-v-55e5786b] {
-  position: relative;
-}
-.wot-theme-dark .wd-cell-group.is-border .wd-cell-group__title[data-v-55e5786b]::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 1px;
-  left: 0;
-  bottom: 0;
-  transform: scaleY(0.5);
-  background: var(--wot-dark-border-color, #3a3a3c);
-}
-.wot-theme-dark .wd-cell-group__title[data-v-55e5786b] {
-  background: var(--wot-dark-background2, #1b1b1b);
-  color: var(--wot-dark-color, var(--wot-color-white, white));
-}
-.wot-theme-dark .wd-cell-group__right[data-v-55e5786b] {
-  color: var(--wot-dark-color3, rgba(232, 230, 227, 0.8));
-}
-.wot-theme-dark .wd-cell-group__body[data-v-55e5786b] {
-  background: var(--wot-dark-background2, #1b1b1b);
-}
-.wd-cell-group[data-v-55e5786b] {
-  background-color: var(--wot-color-white, white);
-}
-.wd-cell-group.is-border .wd-cell-group__title[data-v-55e5786b] {
-  position: relative;
-}
-.wd-cell-group.is-border .wd-cell-group__title[data-v-55e5786b]::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 1px;
-  left: 0;
-  bottom: 0;
-  transform: scaleY(0.5);
-  background: var(--wot-color-border-light, #e8e8e8);
-}
-.wd-cell-group__title[data-v-55e5786b] {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: var(--wot-cell-group-padding, 13px var(--wot-cell-padding, var(--wot-size-side-padding, 15px)));
-  background: var(--wot-color-white, white);
-  font-size: var(--wot-cell-group-title-fs, var(--wot-fs-title, 16px));
-  color: var(--wot-cell-group-title-color, rgba(0, 0, 0, 0.85));
-  font-weight: var(--wot-fw-medium, 500);
-  line-height: 1.43;
-}
-.wd-cell-group__right[data-v-55e5786b] {
-  color: var(--wot-cell-group-value-color, var(--wot-color-content, #262626));
-  font-size: var(--wot-cell-group-value-fs, var(--wot-fs-content, 14px));
-}
-.wd-cell-group__body[data-v-55e5786b] {
-  background: var(--wot-color-white, white);
-}
-/**
- * 这里是uni-app内置的常用样式变量
- *
- * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
- * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
- *
- */
-/**
- * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
- *
- * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
- */
-/* 颜色变量 */
-/* 行为相关颜色 */
-/* 文字基本颜色 */
-/* 背景颜色 */
-/* 边框颜色 */
-/* 尺寸变量 */
-/* 文字尺寸 */
-/* 图片尺寸 */
-/* Border Radius */
-/* 水平间距 */
-/* 垂直间距 */
-/* 透明度 */
-/* 文章场景相关 */
-/**
- * 混合宏
- */
-/**
- * SCSS 配置项：命名空间以及BEM
- */
-/**
- * 辅助函数
- */
-/**
- * SCSS 配置项：命名空间以及BEM
- */
-/* 转换成字符串 */
-/* 判断是否存在 Modifier */
-/* 判断是否存在伪类 */
-/**
- * 主题色切换
- * @params $theme-color 主题色
- * @params $type 变暗’dark‘ 变亮 'light'
- * @params $mix-color 自己设置的混色
- */
-/**
- * 颜色结果切换， 如果开启线性渐变色 使用渐变色，如果没有开启，那么使用主题色
- * @params $open-linear 是否开启线性渐变色
- * @params $deg 渐变色角度
- * @params $theme-color 当前配色
- * @params [Array] $set 主题色明暗设置，与 $color-list 数量对应
- * @params [Array] $color-list 渐变色顺序， $color-list 和 $per-list 数量相同
- * @params [Array] $per-list 渐变色比例
- */
-/**
-  * BEM，定义块（b)
-  */
-/* 定义元素（e），对于伪类，会自动将 e 嵌套在 伪类 底下 */
-/* 此方法用于生成穿透样式 */
-/* 定义元素（e），对于伪类，会自动将 e 嵌套在 伪类 底下 */
-/* 定义状态（m） */
-/* 定义状态（m） */
-/* 对于需要需要嵌套在 m 底下的 e，调用这个混合宏，一般在切换整个组件的状态，如切换颜色的时候 */
-/* 状态，生成 is-$state 类名 */
-/**
-  * 常用混合宏
-  */
-/* 单行超出隐藏 */
-/* 多行超出隐藏 */
-/* 清除浮动 */
-/* 0.5px 边框 指定方向*/
-/* 0.5px 边框 环绕 */
-/**
-  * 三角形实现尖角样式，适用于背景透明情况
-  * @param $size 三角形高，底边为 $size * 2
-  * @param $bg 三角形背景颜色
-  */
-/**
-  * 正方形实现尖角样式，适用于背景不透明情况
-  * @param $size 正方形边长
-  * @param $bg 正方形背景颜色
-  * @param $z-index z-index属性值，不得大于外部包裹器
-  * @param $box-shadow 阴影
-*/
-/**
- * 辅助函数
- */
-/**
- * SCSS 配置项：命名空间以及BEM
- */
-/* 转换成字符串 */
-/* 判断是否存在 Modifier */
-/* 判断是否存在伪类 */
-/**
- * 主题色切换
- * @params $theme-color 主题色
- * @params $type 变暗’dark‘ 变亮 'light'
- * @params $mix-color 自己设置的混色
- */
-/**
- * 颜色结果切换， 如果开启线性渐变色 使用渐变色，如果没有开启，那么使用主题色
- * @params $open-linear 是否开启线性渐变色
- * @params $deg 渐变色角度
- * @params $theme-color 当前配色
- * @params [Array] $set 主题色明暗设置，与 $color-list 数量对应
- * @params [Array] $color-list 渐变色顺序， $color-list 和 $per-list 数量相同
- * @params [Array] $per-list 渐变色比例
- */
-/**
- * UI规范基础变量
- */
-/*----------------------------------------- Theme color. start ----------------------------------------*/
-/* 主题颜色 */
-/* 辅助色 */
-/* 文字颜色（默认浅色背景下 */
-/* 暗黑模式 */
-/* 图形颜色 */
-/*----------------------------------------- Theme color. end -------------------------------------------*/
-/*-------------------------------- Theme color application size.  start --------------------------------*/
-/* 文字字号 */
-/* 文字字重 */
-/* 尺寸 */
-/*-------------------------------- Theme color application size.  end --------------------------------*/
-/* component var */
-/* action-sheet */
-/* badge */
-/* button */
-/* cell */
-/* calendar */
-/* checkbox */
-/* collapse */
-/* divider */
-/* drop-menu */
-/* input-number */
-/* input */
-/* textarea */
-/* loadmore */
-/* message-box */
-/* notice-bar */
-/* pagination */
-/* picker */
-/* col-picker */
-/* overlay */
-/* popup */
-/* progress */
-/* radio */
-/* search */
-/* slider */
-/* sort-button */
-/* steps */
-/* switch */
-/* tabs */
-/* tag */
-/* toast */
-/* loading */
-/* tooltip */
-/* popover */
-/* grid-item */
-/* statustip */
-/* card */
-/* upload */
-/* curtain */
-/* notify */
-/* skeleton */
-/* circle */
-/* swiper */
-/* swiper-nav */
-/* segmented */
-/* tabbar */
-/* tabbar-item */
-/* navbar */
-/* navbar-capsule */
-/* table */
-/* sidebar */
-/* sidebar-item */
-/* fab */
-/* count-down */
-/* keyboard */
-/* number-keyboard */
-/* passwod-input */
-/* form-item */
-/* backtop */
-/* index-bar */
-/* text */
-/* video-preview */
-/* img-cropper */
-/* floating-panel */
-/* signature */
-.wot-theme-dark .wd-badge__content[data-v-6ea9b0eb] {
-  border-color: var(--wot-dark-background2, #1b1b1b);
-}
-.wd-badge[data-v-6ea9b0eb] {
-  position: relative;
-  vertical-align: middle;
-  display: inline-block;
-}
-.wd-badge__content[data-v-6ea9b0eb] {
-  display: inline-block;
-  box-sizing: content-box;
-  height: var(--wot-badge-height, 16px);
-  line-height: var(--wot-badge-height, 16px);
-  padding: var(--wot-badge-padding, 0 5px);
-  background-color: var(--wot-badge-bg, var(--wot-color-danger, #fa4350));
-  border-radius: calc(var(--wot-badge-height, 16px) / 2 + 2px);
-  color: var(--wot-badge-color, #fff);
-  font-size: var(--wot-badge-fs, 12px);
-  text-align: center;
-  white-space: nowrap;
-  border: var(--wot-badge-border, 2px solid var(--wot-badge-color, #fff));
-  font-weight: 500;
-}
-.wd-badge__content.is-fixed[data-v-6ea9b0eb] {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  transform: translateY(-50%) translateX(50%);
-}
-.wd-badge__content.is-dot[data-v-6ea9b0eb] {
-  height: var(--wot-badge-dot-size, 6px);
-  width: var(--wot-badge-dot-size, 6px);
-  padding: 0;
-  border-radius: 50%;
-}
-.wd-badge__content--primary[data-v-6ea9b0eb] {
-  background-color: var(--wot-badge-primary, var(--wot-color-theme, #4d80f0));
-}
-.wd-badge__content--success[data-v-6ea9b0eb] {
-  background-color: var(--wot-badge-success, var(--wot-color-success, #34d19d));
-}
-.wd-badge__content--warning[data-v-6ea9b0eb] {
-  background-color: var(--wot-badge-warning, var(--wot-color-warning, #f0883a));
-}
-.wd-badge__content--info[data-v-6ea9b0eb] {
-  background-color: var(--wot-badge-info, var(--wot-color-info, #909399));
-}
-.wd-badge__content--danger[data-v-6ea9b0eb] {
-  background-color: var(--wot-badge-danger, var(--wot-color-danger, #fa4350));
-}
-/**
- * 这里是uni-app内置的常用样式变量
- *
- * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
- * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
- *
- */
-/**
- * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
- *
- * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
- */
-/* 颜色变量 */
-/* 行为相关颜色 */
-/* 文字基本颜色 */
-/* 背景颜色 */
-/* 边框颜色 */
-/* 尺寸变量 */
-/* 文字尺寸 */
-/* 图片尺寸 */
-/* Border Radius */
-/* 水平间距 */
-/* 垂直间距 */
-/* 透明度 */
-/* 文章场景相关 */
-/**
- * 辅助函数
- */
-/**
- * SCSS 配置项：命名空间以及BEM
- */
-/* 转换成字符串 */
-/* 判断是否存在 Modifier */
-/* 判断是否存在伪类 */
-/**
- * 主题色切换
- * @params $theme-color 主题色
- * @params $type 变暗’dark‘ 变亮 'light'
- * @params $mix-color 自己设置的混色
- */
-/**
- * 颜色结果切换， 如果开启线性渐变色 使用渐变色，如果没有开启，那么使用主题色
- * @params $open-linear 是否开启线性渐变色
- * @params $deg 渐变色角度
- * @params $theme-color 当前配色
- * @params [Array] $set 主题色明暗设置，与 $color-list 数量对应
- * @params [Array] $color-list 渐变色顺序， $color-list 和 $per-list 数量相同
- * @params [Array] $per-list 渐变色比例
- */
-/**
- * UI规范基础变量
- */
-/*----------------------------------------- Theme color. start ----------------------------------------*/
-/* 主题颜色 */
-/* 辅助色 */
-/* 文字颜色（默认浅色背景下 */
-/* 暗黑模式 */
-/* 图形颜色 */
-/*----------------------------------------- Theme color. end -------------------------------------------*/
-/*-------------------------------- Theme color application size.  start --------------------------------*/
-/* 文字字号 */
-/* 文字字重 */
-/* 尺寸 */
-/*-------------------------------- Theme color application size.  end --------------------------------*/
-/* component var */
-/* action-sheet */
-/* badge */
-/* button */
-/* cell */
-/* calendar */
-/* checkbox */
-/* collapse */
-/* divider */
-/* drop-menu */
-/* input-number */
-/* input */
-/* textarea */
-/* loadmore */
-/* message-box */
-/* notice-bar */
-/* pagination */
-/* picker */
-/* col-picker */
-/* overlay */
-/* popup */
-/* progress */
-/* radio */
-/* search */
-/* slider */
-/* sort-button */
-/* steps */
-/* switch */
-/* tabs */
-/* tag */
-/* toast */
-/* loading */
-/* tooltip */
-/* popover */
-/* grid-item */
-/* statustip */
-/* card */
-/* upload */
-/* curtain */
-/* notify */
-/* skeleton */
-/* circle */
-/* swiper */
-/* swiper-nav */
-/* segmented */
-/* tabbar */
-/* tabbar-item */
-/* navbar */
-/* navbar-capsule */
-/* table */
-/* sidebar */
-/* sidebar-item */
-/* fab */
-/* count-down */
-/* keyboard */
-/* number-keyboard */
-/* passwod-input */
-/* form-item */
-/* backtop */
-/* index-bar */
-/* text */
-/* video-preview */
-/* img-cropper */
-/* floating-panel */
-/* signature */
-/**
- * 混合宏
- */
-/**
- * SCSS 配置项：命名空间以及BEM
- */
-/**
- * 辅助函数
- */
-/**
- * SCSS 配置项：命名空间以及BEM
- */
-/* 转换成字符串 */
-/* 判断是否存在 Modifier */
-/* 判断是否存在伪类 */
-/**
- * 主题色切换
- * @params $theme-color 主题色
- * @params $type 变暗’dark‘ 变亮 'light'
- * @params $mix-color 自己设置的混色
- */
-/**
- * 颜色结果切换， 如果开启线性渐变色 使用渐变色，如果没有开启，那么使用主题色
- * @params $open-linear 是否开启线性渐变色
- * @params $deg 渐变色角度
- * @params $theme-color 当前配色
- * @params [Array] $set 主题色明暗设置，与 $color-list 数量对应
- * @params [Array] $color-list 渐变色顺序， $color-list 和 $per-list 数量相同
- * @params [Array] $per-list 渐变色比例
- */
-/**
-  * BEM，定义块（b)
-  */
-/* 定义元素（e），对于伪类，会自动将 e 嵌套在 伪类 底下 */
-/* 此方法用于生成穿透样式 */
-/* 定义元素（e），对于伪类，会自动将 e 嵌套在 伪类 底下 */
-/* 定义状态（m） */
-/* 定义状态（m） */
-/* 对于需要需要嵌套在 m 底下的 e，调用这个混合宏，一般在切换整个组件的状态，如切换颜色的时候 */
-/* 状态，生成 is-$state 类名 */
-/**
-  * 常用混合宏
-  */
-/* 单行超出隐藏 */
-/* 多行超出隐藏 */
-/* 清除浮动 */
-/* 0.5px 边框 指定方向*/
-/* 0.5px 边框 环绕 */
-/**
-  * 三角形实现尖角样式，适用于背景透明情况
-  * @param $size 三角形高，底边为 $size * 2
-  * @param $bg 三角形背景颜色
-  */
-/**
-  * 正方形实现尖角样式，适用于背景不透明情况
-  * @param $size 正方形边长
-  * @param $bg 正方形背景颜色
-  * @param $z-index z-index属性值，不得大于外部包裹器
-  * @param $box-shadow 阴影
-*/
 .wot-theme-dark .wd-tabbar-item__body[data-v-5b5379ae] .is-inactive {
   color: var(--wot-dark-color-gray, var(--wot-color-secondary, #595959));
 }
@@ -2461,4 +2076,47 @@
   bottom: 0;
   right: 0;
   left: 0;
+}
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.icon_view {
+  display: flex;
+  flex-wrap: wrap;
+}
+.icon_view .icon_view_item {
+  width: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  font-size: 0.75em;
+}
+.icon_view .icon_view_item uni-image {
+  margin-bottom: 1em;
+  width: 48px;
+  height: 48px;
+  display: block;
 }

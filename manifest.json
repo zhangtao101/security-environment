@@ -1,12 +1,22 @@
 {
-    "name" : "安环上报",
+    "name" : "安环系统",
     "appid" : "__UNI__F0AD74D",
     "description" : "test",
-    "versionName" : "1.0.4",
-    "versionCode" : 104,
+    "versionName" : "1.0.8",
+    "versionCode" : 107,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {
+        "statusbar" : {
+            "immersed" : true, // 启用沉浸式状态栏
+            "style" : "dark" // 或 "light"，控制状态栏文字颜色
+        },
+        "safearea" : {
+            "background" : "#00000000", // 透明背景
+            "bottom" : {
+                "offset" : "auto"
+            }
+        },
         "usingComponents" : true,
         "nvueStyleCompiler" : "uni-app",
         "compilerVersion" : 3,

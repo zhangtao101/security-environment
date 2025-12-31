@@ -1,5 +1,6 @@
 <template>
-	<view style="margin-top: 1em;">
+	<view>
+		<wd-input align-right v-model="code" label="区域编码" suffix-icon="scan" readonly @click="scan()" style="margin: 1em 0;" />
 		<wd-cell-group>
 			<wd-cell v-for="(item, index) of inspectionTaskList" :key="index" center>
 				<template #title>
@@ -32,7 +33,10 @@
 		ref,
 		getCurrentInstance
 	} from 'vue';
-	import { onPullDownRefresh, onShow } from '@dcloudio/uni-app';
+	import {
+		onPullDownRefresh,
+		onShow
+	} from '@dcloudio/uni-app';
 	import {
 		request,
 		setToken,
@@ -50,7 +54,7 @@
 			request({
 				url: `/${config.mesMain}/riskcheck/execution/taskList`,
 				data: {
-					area: '',
+					areaCode: code.value,
 					pageNum: 1,
 					pageSize: 9999
 				},
@@ -60,7 +64,7 @@
 			request({
 				url: `/${config.mesMain}/riskcheck/execution/taskListEd`,
 				data: {
-					area: '',
+					areaCode: code.value,
 					pageNum: 1,
 					pageSize: 9999
 				},
@@ -74,7 +78,7 @@
 			];
 			console.log(inspectionTaskList.value)
 		}).finally(() => {
-			 uni.stopPullDownRefresh();
+			uni.stopPullDownRefresh();
 		});
 	}
 
@@ -87,7 +91,9 @@
 		uni.navigateTo({
 			url: `/pages/riskInspectionDetails/riskInspectionDetails`,
 			success(res) {
-				res.eventChannel.emit('acceptDataFromOpenerPage', { id: deteils.id })
+				res.eventChannel.emit('acceptDataFromOpenerPage', {
+					id: deteils.id
+				})
 			}
 		});
 	}
@@ -106,10 +112,28 @@
 		})
 
 	})
+
+
+	// region 扫码
+	const code = ref('');
+
+	function scan() {
+		// 允许从相机和相册扫码
+		uni.scanCode({
+			success: function(res) {
+				console.log('条码类型：' + res.scanType);
+				console.log('条码内容：' + res.result);
+				code.value = res.result;
+				queryDate();
+			}
+		});
+	}
+
+	// endregion
 	onPullDownRefresh(() => {
 		queryDate()
 	});
-	
+
 	onShow(() => {
 		queryDate();
 	});
