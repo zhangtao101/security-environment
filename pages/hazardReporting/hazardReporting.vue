@@ -54,7 +54,7 @@
             v-model="formstate.hazardSource"
             label="隐患来源"
             prop="hazardSource"
-            :rules="[{ required: true, message: '请输入隐患来源' }]"
+            :rules="[{ required: false, message: '请输入隐患来源' }]"
         />
         <wd-picker
             align-right
